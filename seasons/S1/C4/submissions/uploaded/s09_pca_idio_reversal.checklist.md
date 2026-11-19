@@ -22,3 +22,5 @@ Rules compliance:
 - [x] own original work; only OSI-licensed libraries (numpy/pandas/scikit-learn/lightgbm: BSD/MIT)
 - [x] no external data; no hand labelling
 - [ ] code not shared privately with anyone
+
+Note (2026-11-20): the two rules boxes ("own original work", "no external data") were ticked at public release, not before upload. Candidate signals came from AI-assisted family searches inside the author's harness (see README, Authorship).
