@@ -1,0 +1,19 @@
+{
+  "run_id": "20261007T141533_s06_reversal_composite",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.029031656511761122,
+  "IC_std": 0.23546519275394856,
+  "concentration": 0.33624473960054024,
+  "compression_loss": -0.057309193151049306,
+  "city_novelty_deg": 25.221798486363912,
+  "nearest": "signal_8aa423600e822567",
+  "n_within_60deg": 400,
+  "nearest_list": [
+    {
+      "signal_id": "signal_8aa423600e822567",
+      "angular_distance_rad": 0.4402034268615724,
+      "angular_distance_deg": 25.221798486363912
+    }
+  ]
+}

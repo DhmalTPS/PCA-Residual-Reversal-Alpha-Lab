@@ -1,0 +1,54 @@
+{
+  "run_id": "20261007T141533_s06_reversal_composite",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.029031656511761122,
+  "IC_std": 0.23546519275394856,
+  "concentration": 0.33624473960054024,
+  "compression_loss": -0.057309193151049306,
+  "city_novelty_deg": 25.18557808048232,
+  "nearest": "signal_8aa423600e822567",
+  "n_within_60deg": 332,
+  "nearest_list": [
+    {
+      "signal_id": "signal_8aa423600e822567",
+      "angular_distance_rad": 0.4395712615225299,
+      "angular_distance_deg": 25.18557808048232
+    },
+    {
+      "signal_id": "signal_26b14742515b8703",
+      "angular_distance_rad": 0.4624188372360773,
+      "angular_distance_deg": 26.494647740974187
+    },
+    {
+      "signal_id": "signal_0e62b65d5a961a1d",
+      "angular_distance_rad": 0.4692787681536876,
+      "angular_distance_deg": 26.887692830304562
+    },
+    {
+      "signal_id": "signal_0b7d3ad6c1a34602",
+      "angular_distance_rad": 0.4746563901433498,
+      "angular_distance_deg": 27.195807874128953
+    },
+    {
+      "signal_id": "signal_aafef4d0ee014790",
+      "angular_distance_rad": 0.5356689151773582,
+      "angular_distance_deg": 30.69156805601391
+    },
+    {
+      "signal_id": "signal_da57cf403604040e",
+      "angular_distance_rad": 0.5519265083452433,
+      "angular_distance_deg": 31.623059529574448
+    },
+    {
+      "signal_id": "signal_0e9a708955d6aed8",
+      "angular_distance_rad": 0.5542398861969159,
+      "angular_distance_deg": 31.75560631689433
+    },
+    {
+      "signal_id": "signal_eeff31253122301e",
+      "angular_distance_rad": 0.5592250789602502,
+      "angular_distance_deg": 32.04123682229255
+    }
+  ]
+}

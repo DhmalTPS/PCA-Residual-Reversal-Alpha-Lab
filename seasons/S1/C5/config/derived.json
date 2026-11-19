@@ -1,0 +1,7 @@
+{
+  "target_lag": 1,
+  "target_horizon_hours": 120,
+  "embargo_hours": 127,
+  "_source": "research/r01_target_identification.py",
+  "_best_cos": 0.9364261350246937
+}

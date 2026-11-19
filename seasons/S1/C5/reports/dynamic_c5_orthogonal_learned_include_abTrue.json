@@ -1,0 +1,96 @@
+{
+  "file": "F:\\#Project\\AlphaNova_S1C4\\seasons\\S1\\C5\\submissions\\c5_orthogonal_learned_include_abTrue.py",
+  "passed": true,
+  "checks": [
+    {
+      "check": "shape",
+      "status": "PASS",
+      "detail": "type=DataFrame shape=(49351, 20)"
+    },
+    {
+      "check": "finite",
+      "status": "PASS",
+      "detail": "no NaN/inf"
+    },
+    {
+      "check": "demean",
+      "status": "PASS",
+      "detail": "max |row sum| / median L1 = 2.29e-16"
+    },
+    {
+      "check": "determinism",
+      "status": "PASS",
+      "detail": "max rel diff = 0.00e+00"
+    },
+    {
+      "check": "reload",
+      "status": "PASS",
+      "detail": "pickle 48.17 MB, max rel diff = 0.00e+00"
+    },
+    {
+      "check": "causality",
+      "status": "PASS",
+      "detail": "rows<=t with vs without 7403 later rows: max rel diff = 0.00e+00"
+    },
+    {
+      "check": "row_shift",
+      "status": "PASS",
+      "detail": "start moved by 1009 rows, compared after 3000-row burn-in: max rel diff = 0.00e+00 (tol 1e-06), sign agreement 1.0000"
+    },
+    {
+      "check": "history_hook",
+      "status": "PASS",
+      "detail": "lone 800-row block vs full-history rows: max rel diff = 3.21e-12, sign agreement 1.0000"
+    },
+    {
+      "check": "no_hook_fallback",
+      "status": "PASS",
+      "detail": "predict without generate_features still runs (cold start)"
+    },
+    {
+      "check": "nan_robust",
+      "status": "PASS",
+      "detail": "1% NaN injected"
+    },
+    {
+      "check": "shuffle_robust",
+      "status": "PASS",
+      "detail": "row-permuted train/predict"
+    },
+    {
+      "check": "short_batch",
+      "status": "PASS",
+      "detail": "400-row batch and all-zero target"
+    },
+    {
+      "check": "flat",
+      "status": "PASS",
+      "detail": "OOS flat fraction 0.0000, longest run 0 h (whole frame incl. warm-up: 0.0007, 36 h)"
+    },
+    {
+      "check": "train_time",
+      "status": "PASS",
+      "detail": "0.0 s (hard 240 s)"
+    },
+    {
+      "check": "train_budget",
+      "status": "PASS",
+      "detail": "0.0 s (gate-comfort budget 30 s)"
+    },
+    {
+      "check": "predict_time",
+      "status": "PASS",
+      "detail": "28.3 s on 49351 rows (hard 60 s)"
+    },
+    {
+      "check": "gate_projection",
+      "status": "PASS",
+      "detail": "init+train+predict = 28.3 s -> x50 retrains = 23.6 min"
+    }
+  ],
+  "timing": {
+    "init": 8.400000297115184e-06,
+    "train": 0.0001570999993418809,
+    "predict": 28.33569820000048
+  }
+}

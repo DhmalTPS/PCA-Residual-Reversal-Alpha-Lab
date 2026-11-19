@@ -1,0 +1,24 @@
+{
+  "run_id": "20261008T050626_s09_pca_idio_reversal",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.0246453051844598,
+  "IC_std": 0.23032518472283267,
+  "concentration": 0.13143104019164753,
+  "compression_loss": -0.16286979892278225,
+  "city_novelty_deg": 56.12219900510453,
+  "nearest": "signal_cd8d7d8a9bd0a83d",
+  "n_within_60deg": 5,
+  "nearest_list": [
+    {
+      "signal_id": "signal_cd8d7d8a9bd0a83d",
+      "angular_distance_rad": 0.9795171560985598,
+      "angular_distance_deg": 56.12219900510453
+    },
+    {
+      "signal_id": "signal_e7ea38d1c61ba767",
+      "angular_distance_rad": 0.9890687673970151,
+      "angular_distance_deg": 56.66946602005548
+    }
+  ]
+}

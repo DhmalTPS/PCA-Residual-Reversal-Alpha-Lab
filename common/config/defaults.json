@@ -1,0 +1,44 @@
+{
+  "_doc": "Common defaults for every cycle. Per-cycle overrides: seasons/<S>/<C>/config/settings.json; measured values: <cycle>/config/derived.json (written by research r01).",
+  "target_lag": 1,
+  "target_horizon_hours": 24,
+  "embargo_hours": 48,
+  "costs_bp": [
+    5.0,
+    10.0
+  ],
+  "official_cost_bp": 5.0,
+  "stress_cost_bp": 10.0,
+  "min_train_months": 3,
+  "vault_months": 2,
+  "quick_test_months": 3,
+  "predict_history_hours": 2400,
+  "nw_lag_hours": 48,
+  "bootstrap_block_hours": 72,
+  "bootstrap_reps": 1000,
+  "seed": 20261006,
+  "prior_tau_sharpe": 0.012,
+  "min_prob_positive": 0.9,
+  "novelty_rho_max": 0.35,
+  "official_rho_max": 0.5,
+  "shuffle_gate_reps": 20,
+  "shuffle_gate_alpha": 0.05,
+  "limits": {
+    "train_seconds_hard": 240,
+    "train_seconds_budget": 30,
+    "predict_seconds_hard": 60,
+    "memory_gb": 8
+  },
+  "flat": {
+    "rel_threshold": 0.05,
+    "max_fraction": 0.02,
+    "max_run_hours": 48
+  },
+  "row_shift": {
+    "pad_hours": 1009,
+    "burn_in_hours": 3000,
+    "rel_tol": 1e-06,
+    "_doc": "burn-in must exceed the strategy's total chained look-back; the server pads by > 1 year"
+  },
+  "_prior_doc": "prior sd of a new idea's true hourly Sharpe, calibrated to the public board (top 0.020, 3rd 0.011, median ~ -0.005)"
+}

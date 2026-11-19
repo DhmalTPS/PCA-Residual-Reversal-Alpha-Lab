@@ -1,0 +1,66 @@
+# Whitelist: ignore everything, then re-include only the published research code, configs, notes and small results.
+# Competition data, the organiser's package, signal-city maps, OOS prediction caches and venvs stay local.
+
+/*
+!/.gitignore
+!/README.md
+!/JOURNAL.md
+!/ACTIVE_CYCLE
+!/requirements-lab.txt
+!/common/
+!/seasons/
+
+# ---- common/ (reusable lab) ----
+/common/*
+!/common/README.md
+!/common/config/
+!/common/lab/
+!/common/research_templates/
+!/common/strategy_templates/
+!/common/tests/
+!/common/tools/
+
+# ---- seasons/ ----
+/seasons/*
+!/seasons/S1/
+/seasons/S1/*
+!/seasons/S1/SEASON.md
+!/seasons/S1/occupied_directions.py
+!/seasons/S1/C4/
+!/seasons/S1/C5/
+
+/seasons/S1/C*/*
+!/seasons/S1/C*/*.md
+!/seasons/S1/C*/config/
+!/seasons/S1/C*/strategies/
+!/seasons/S1/C*/research/
+!/seasons/S1/C*/reports/
+!/seasons/S1/C*/experiments/
+!/seasons/S1/C4/submissions/
+
+# experiments: trial registry and logs only (no runs/, cache/, prediction arrays)
+/seasons/S1/C*/experiments/*
+!/seasons/S1/C*/experiments/*.csv
+!/seasons/S1/C5/experiments/c5_r06/
+/seasons/S1/C5/experiments/c5_r06/*
+!/seasons/S1/C5/experiments/c5_r06/period_pnl.csv
+
+# submissions: only the file actually uploaded (other copies duplicate strategies/)
+/seasons/S1/C4/submissions/*
+!/seasons/S1/C4/submissions/uploaded/
+
+# board snapshot names other entrants
+/seasons/S1/C4/config/leaderboard.json
+/seasons/S1/C4/research/_common_pre_migration.py
+/seasons/S1/C*/research/agents/_offline_learned/
+
+# ---- never, anywhere ----
+_history/
+__pycache__/
+*.pyc
+*.parquet
+*.npy
+*.npz
+.venv/
+.vscode/
+.idea/

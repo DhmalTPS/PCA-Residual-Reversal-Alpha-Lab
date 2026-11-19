@@ -1,0 +1,19 @@
+{
+  "run_id": "20261007T173507_s08_two_leg_reversal",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.03955666505179463,
+  "IC_std": 0.24184382118134326,
+  "concentration": 0.2933255294721264,
+  "compression_loss": -0.0952991898851467,
+  "city_novelty_deg": 26.60518909554041,
+  "nearest": "signal_7d900a7f7beb6fdd",
+  "n_within_60deg": 233,
+  "nearest_list": [
+    {
+      "signal_id": "signal_7d900a7f7beb6fdd",
+      "angular_distance_rad": 0.46434814783287237,
+      "angular_distance_deg": 26.60518909554041
+    }
+  ]
+}

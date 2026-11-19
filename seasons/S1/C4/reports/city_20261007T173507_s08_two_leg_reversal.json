@@ -1,0 +1,29 @@
+{
+  "run_id": "20261007T173507_s08_two_leg_reversal",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.03955666505179463,
+  "IC_std": 0.24184382118134326,
+  "concentration": 0.2933255294721264,
+  "compression_loss": -0.0952991898851467,
+  "city_novelty_deg": 26.31860103624694,
+  "nearest": "signal_7d900a7f7beb6fdd",
+  "n_within_60deg": 200,
+  "nearest_list": [
+    {
+      "signal_id": "signal_7d900a7f7beb6fdd",
+      "angular_distance_rad": 0.4593462426013005,
+      "angular_distance_deg": 26.31860103624694
+    },
+    {
+      "signal_id": "signal_22b31caee2dd81a7",
+      "angular_distance_rad": 0.5488260874882738,
+      "angular_distance_deg": 31.445418499755764
+    },
+    {
+      "signal_id": "signal_4005c93723f0d555",
+      "angular_distance_rad": 0.6055303548573264,
+      "angular_distance_deg": 34.69433370038387
+    }
+  ]
+}

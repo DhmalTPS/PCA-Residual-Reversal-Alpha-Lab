@@ -1,0 +1,12 @@
+# Research environment (Python 3.13, venv at .venv). All OSI-licensed (BSD / MIT / Apache-2.0).
+# The vendor's own list is requirements.txt; submissions may only rely on the server's pre-installed set:
+# numpy, pandas, scikit-learn, xgboost, lightgbm, pyarrow.
+numpy==2.4.6
+pandas==2.3.3
+scikit-learn==1.9.1
+lightgbm==4.7.0
+xgboost==3.4.1
+pyarrow
+scipy
+matplotlib
+cloudpickle

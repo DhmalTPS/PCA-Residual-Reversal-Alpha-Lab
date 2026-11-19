@@ -1,0 +1,56 @@
+{
+  "cycle": "S1C5",
+  "server_novelty_checks": [
+    {
+      "file": "submissions/c5_idio_reversal_change_lag48_n_factors8_smooth_halflife168p0_smooth_window6.py (A)",
+      "utc": "2026-10-15T06:00",
+      "verdict": "not novel",
+      "global_deg": 59.18,
+      "quality_gate_deg": 59.18,
+      "rho_quality_gate": 0.512,
+      "action": "discard"
+    },
+    {
+      "file": "submissions/c5_idio_reversal_combo.py (AB)",
+      "utc": "2026-10-15T06:19",
+      "verdict": "not novel",
+      "global_deg": 50.38,
+      "quality_gate_deg": 50.38,
+      "rho_quality_gate": 0.638,
+      "action": "discard"
+    },
+    {
+      "file": "submissions/c5_idio_reversal_change_lag240_n_factors3_smooth_halflife48p0_smooth_window1.py (L240)",
+      "utc": "2026-10-15T06:41",
+      "verdict": "not novel",
+      "global_deg": 50.78,
+      "quality_gate_deg": 50.78,
+      "rho_quality_gate": 0.632,
+      "predicted_deg": 70.3,
+      "action": "discard"
+    },
+    {
+      "file": "submissions/c5_orthogonal_learned.py (Z)",
+      "utc": "2026-10-15T09:13",
+      "verdict": "not novel",
+      "global_deg": 58.14,
+      "quality_gate_deg": 52.53,
+      "rho_quality_gate": 0.608,
+      "rho_global": 0.528,
+      "action": "pending (not onboarded)"
+    }
+  ],
+  "observations": [
+    "C5 pot leaders (board): ASH ~0.024-0.026 IC~0.06, jinfanhahaha ~0.021-0.025, overbearingconfidence ~0.018-0.021, radiant ~0.019. C5 board at 10:24 IST: only negative entries.",
+    "Single-blocker model failed on L240 (pred 70 deg, measured 50.8): several pot signals occupy the idiosyncratic-reversal cone at different horizons (50-59 deg from each probe). City distance does not predict server angle (city 48-53 deg -> server 38-61 deg).",
+    "Z: quality-gate 52.53 < global 58.14 deg. FACT: the gate correlation (0.608) exceeds 0.5. INFERENCE (C4 reading, NOT verified): qg < global means the blocker is in the legacy pot. Verification needed: full Legacy Signals list + current board (nearest-global ids)."
+  ],
+  "novelty_checks_used": 4,
+  "submissions_used": 0,
+  "blocker_model": {
+    "from": "A 59.18 deg + AB 50.38 deg",
+    "projection_on_span": "0.339*A + 0.421*B",
+    "pred_cos(X)": "0.339*rho(X,A) + 0.421*rho(X,B)",
+    "pred_B_deg": 56.3
+  }
+}

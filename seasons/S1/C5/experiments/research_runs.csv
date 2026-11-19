@@ -1,0 +1,10 @@
+utc,script,args,exit_code,files_changed
+20261015T053418,seasons/S1/C5/research/c5_r01_residual_family.py,,0,
+20261015T054604,seasons/S1/C5/research/c5_r02_recency_screen.py,,0,
+20261015T055422,seasons/S1/C5/research/c5_r03_robustness.py,,0,
+20261015T063045,seasons/S1/C5/research/c5_r04_blocker_model.py,,0,
+20261015T072720,seasons/S1/C5/research/c5_r05_orthogonal_dilution.py,,0,
+20261015T094751,seasons/S1/C5/research/c5_r06_assumption_audit.py,--smoke,0,
+20261015T094828,seasons/S1/C5/research/c5_r06_assumption_audit.py,,0,config/leaderboard.json (previous kept: config/_history/leaderboard.before_20261015T094828.json)
+20261015T100022,seasons/S1/C5/research/c5_r06b_analyze.py,,0,
+20261015T100130,seasons/S1/C5/research/c5_r06_assumption_audit.py,--slow,0,

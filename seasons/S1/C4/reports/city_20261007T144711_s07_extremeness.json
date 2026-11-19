@@ -1,0 +1,39 @@
+{
+  "run_id": "20261007T144711_s07_extremeness",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.015813916697292936,
+  "IC_std": 0.23335225855468833,
+  "concentration": 0.14369750099544976,
+  "compression_loss": -0.09423613001711495,
+  "city_novelty_deg": 46.678953923384775,
+  "nearest": "signal_75a7dbccdc6ed16c",
+  "n_within_60deg": 13,
+  "nearest_list": [
+    {
+      "signal_id": "signal_75a7dbccdc6ed16c",
+      "angular_distance_rad": 0.8147014373497892,
+      "angular_distance_deg": 46.678953923384775
+    },
+    {
+      "signal_id": "signal_9bf467beaa66d0ea",
+      "angular_distance_rad": 0.8384791640019664,
+      "angular_distance_deg": 48.041317306970264
+    },
+    {
+      "signal_id": "signal_6dc2f4f6c9a2d119",
+      "angular_distance_rad": 0.90749754487001,
+      "angular_distance_deg": 51.99577923953562
+    },
+    {
+      "signal_id": "signal_f3f46af7525bf19c",
+      "angular_distance_rad": 0.9254989715082511,
+      "angular_distance_deg": 53.02718501112121
+    },
+    {
+      "signal_id": "signal_f64801f7787d0127",
+      "angular_distance_rad": 0.9326470835929919,
+      "angular_distance_deg": 53.43674166506332
+    }
+  ]
+}

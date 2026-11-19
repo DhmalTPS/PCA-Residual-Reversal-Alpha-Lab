@@ -1,0 +1,19 @@
+{
+  "run_id": "20261015T054041_c5_idio_reversal",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.036959554922882665,
+  "IC_std": 0.21563304755803253,
+  "concentration": 0.06942974282844819,
+  "compression_loss": -0.4953707320292811,
+  "city_novelty_deg": 48.86907870314667,
+  "nearest": "signal_cf8edf53d881e57b",
+  "n_within_60deg": 76,
+  "nearest_list": [
+    {
+      "signal_id": "signal_cf8edf53d881e57b",
+      "angular_distance_rad": 0.85292632578615,
+      "angular_distance_deg": 48.86907870314667
+    }
+  ]
+}

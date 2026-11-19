@@ -1,0 +1,53 @@
+Processing submission: submit/s06_reversal_composite.py
+Mode: full walk-forward + gauge-fix
+============================================================
+Skipping PEP 723 install (COMP6_DISABLE_PIP_INSTALL set).
+Loaded predictor class: S06ReversalComposite
+Walk-forward full: 31 periods, gauge_fix=True
+Validation: min(800, 20%) per period
+NOTE: These are validation-set statistics. Test-set results will differ.
+============================================================
+  [001] 800 val rows, Sharpe=-0.0578, 2.0s
+  [002] 800 val rows, Sharpe=+0.0305, 2.1s
+  [003] 800 val rows, Sharpe=+0.0438, 2.2s
+  [004] 800 val rows, Sharpe=+0.0161, 2.1s
+  [005] 800 val rows, Sharpe=+0.0690, 2.2s
+  [006] 800 val rows, Sharpe=+0.0490, 2.2s
+  [007] 800 val rows, Sharpe=+0.0820, 2.1s
+  [008] 800 val rows, Sharpe=+0.0341, 2.2s
+  [009] 800 val rows, Sharpe=+0.0352, 2.2s
+  [010] 800 val rows, Sharpe=-0.0081, 2.0s
+  [011] 800 val rows, Sharpe=-0.0088, 2.1s
+  [012] 800 val rows, Sharpe=+0.0649, 2.1s
+  [013] 800 val rows, Sharpe=+0.0204, 2.1s
+  [014] 800 val rows, Sharpe=+0.0421, 2.3s
+  [015] 800 val rows, Sharpe=+0.0250, 2.2s
+  [016] 800 val rows, Sharpe=-0.0090, 2.2s
+  [017] 800 val rows, Sharpe=+0.0459, 2.1s
+  [018] 800 val rows, Sharpe=+0.0170, 2.2s
+  [019] 800 val rows, Sharpe=+0.0592, 2.2s
+  [020] 800 val rows, Sharpe=+0.0333, 2.2s
+  [021] 800 val rows, Sharpe=+0.0014, 2.3s
+  [022] 800 val rows, Sharpe=+0.0229, 2.3s
+  [023] 800 val rows, Sharpe=+0.0009, 2.1s
+  [024] 800 val rows, Sharpe=+0.0106, 2.2s
+  [025] 800 val rows, Sharpe=+0.0370, 2.2s
+  [026] 800 val rows, Sharpe=-0.0055, 2.2s
+  [027] 800 val rows, Sharpe=-0.0077, 2.2s
+  [028] 800 val rows, Sharpe=+0.0111, 2.2s
+  [029] 800 val rows, Sharpe=-0.0043, 2.2s
+  [030] 800 val rows, Sharpe=+0.0000, 2.2s
+  [031] 800 val rows, Sharpe=+0.0127, 2.1s
+============================================================
+Overall Sharpe: 0.0184
+Periods: 31, Observations: 24800
+IC: 0.0222 (std=0.2054)
+IC-dispersion corr: 0.0754
+Concentration: 0.3847
+Compression loss: -0.0355
+City novelty: 24.1 deg (nearest: signal_8aa423600e822567)
+Global novelty: computed after submission
+
+NOTE: These are validation-set statistics. Test-set results will differ.
+
+Results written to experiments/runner_results.csv

@@ -1,0 +1,19 @@
+{
+  "run_id": "20261008T050608_s09_pca_idio_reversal",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.04454149128419864,
+  "IC_std": 0.22679141975000605,
+  "concentration": 0.10060099188044208,
+  "compression_loss": -0.3982125059838745,
+  "city_novelty_deg": 50.79120047398869,
+  "nearest": "signal_065089a1122b1147",
+  "n_within_60deg": 3,
+  "nearest_list": [
+    {
+      "signal_id": "signal_065089a1122b1147",
+      "angular_distance_rad": 0.8864736793116071,
+      "angular_distance_deg": 50.79120047398869
+    }
+  ]
+}

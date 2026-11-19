@@ -1,0 +1,19 @@
+{
+  "run_id": "20261007T162538_s07_extremeness",
+  "periods": 29,
+  "rows": 23200,
+  "IC_gauge": 0.027449875450521345,
+  "IC_std": 0.2401335353679462,
+  "concentration": 0.1620541059390981,
+  "compression_loss": -0.1419372270326283,
+  "city_novelty_deg": 47.75320755094381,
+  "nearest": "signal_f3f46af7525bf19c",
+  "n_within_60deg": 15,
+  "nearest_list": [
+    {
+      "signal_id": "signal_f3f46af7525bf19c",
+      "angular_distance_rad": 0.8334507001521874,
+      "angular_distance_deg": 47.75320755094381
+    }
+  ]
+}

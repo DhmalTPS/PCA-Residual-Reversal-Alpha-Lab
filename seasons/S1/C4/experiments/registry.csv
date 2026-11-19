@@ -1,0 +1,344 @@
+run_id,utc,strategy,file_sha,overrides,mode,data,hours,IC,IC_se,IC_t,SR_gross,SR_net_5bp,SR_se_5bp,SR_ci90_lo_5bp,SR_ci90_hi_5bp,SR_net_10bp,SR_shrunk,P_SR_pos,PSR0,DSR,SR_star,n_trials,months_pos_frac,months_t,turnover_mean,cost_drag_sd_units,IC_disp_corr,concentration_raw,flat_fraction,longest_flat_run,train_s_max,predict_s_max,notes
+20261006T184108_s04_xs_contemp_gbm,20261006T184108,s04_xs_contemp_gbm,f4f640367e931c86,,full,real,20424.0,0.0305141463225625,0.0094774388139563,3.219661653486781,0.0108287022874577,0.005205203630856,0.0066390186053352,-0.0050521595112233,0.0157609240761651,-0.000418228970257,0.0039853413460625,0.7536552110876646,0.7838206080589807,0.7838206080589807,0.0,1.0,0.4285714285714285,0.9956770809780656,0.0422057038891043,0.0056234684680338,0.0173740658324537,0.543778049888356,0.0,0.0,6.19,0.5,
+20261006T184511_s04_xs_contemp_gbm,20261006T184511,s04_xs_contemp_gbm,f4f640367e931c86,"{""TILT_WINDOW"": 720}",full,real,20424.0,0.0128295153747102,0.0112227708331763,1.143168257235025,0.0050858316979647,-0.0026117406165197,0.0072439917764286,-0.0146944886443413,0.0101800488741656,-0.0103094767626348,-0.0019141867964715,0.3787903901863302,0.359286983123979,0.1894647490009538,0.0037651034397234,2.0,0.4285714285714285,-0.2624622141487802,0.0422709475214999,0.0076975378801518,-0.1025393441206754,0.03548044261475,0.0,0.0,13.43,1.0,tilt removal 720h
+grid_s04_xs_contemp_gbm_24.0_0.0,20261006T184634,s04_xs_contemp_gbm,f4f640367e931c86,"{""SMOOTH_HALFLIFE"": 24.0, ""SMOOTH_WINDOW"": 96, ""BAND"": 0.0}",grid,real,,,,,0.0128289895971905,0.0035531310143564,,,,-0.0057226513945569,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s04_xs_contemp_gbm_48.0_0.0,20261006T184634,s04_xs_contemp_gbm,f4f640367e931c86,"{""SMOOTH_HALFLIFE"": 48.0, ""SMOOTH_WINDOW"": 192, ""BAND"": 0.0}",grid,real,,,,,0.0108356537854642,0.0052007933649537,,,,-0.0004340341281059,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s04_xs_contemp_gbm_96.0_0.0,20261006T184634,s04_xs_contemp_gbm,f4f640367e931c86,"{""SMOOTH_HALFLIFE"": 96.0, ""SMOOTH_WINDOW"": 384, ""BAND"": 0.0}",grid,real,,,,,0.0099931940217638,0.0067447633270878,,,,0.0034963640624938,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s04_xs_contemp_gbm_168.0_0.0,20261006T184635,s04_xs_contemp_gbm,f4f640367e931c86,"{""SMOOTH_HALFLIFE"": 168.0, ""SMOOTH_WINDOW"": 672, ""BAND"": 0.0}",grid,real,,,,,0.0099798695824231,0.0079506391804102,,,,0.005921422493747,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s04_xs_contemp_gbm_336.0_0.0,20261006T184635,s04_xs_contemp_gbm,f4f640367e931c86,"{""SMOOTH_HALFLIFE"": 336.0, ""SMOOTH_WINDOW"": 1344, ""BAND"": 0.0}",grid,real,,,,,0.008644326053418949,0.007479599121608738,,,,0.006314869707491644,,,,,,,,,,,,,,,,,r04 turnover grid
+20261006T185130_s04_xs_contemp_gbm,20261006T185130,s04_xs_contemp_gbm,f4f640367e931c86,,full,real-official,23200,-0.023242238303178925,0.008137363740872346,-2.856236865317673,-0.010271780221374621,-0.01950020879749991,0.005905194457580926,-0.029545027789863045,-0.010862000174541359,-0.028728471960330043,-0.015698604125061733,0.0015238131757301931,0.0004827108589110507,0.0004827108589110507,0.0,1,0.27586206896551724,-3.04791822310273,0.04385023195258236,0.00922849684478468,-0.037357166987401526,0.760598159836971,0.0,0,6.32,0.56,
+20261007T141202_s05_ridge_regime,20261007T141202,s05_ridge_regime,ef072260f61832f3,"{""HOUR_FRACTION"": 1.0, ""MAX_TRAIN_ROWS"": 6000}",full,real-official,23200,0.01208317790701214,0.009381170448374112,1.2880245565846555,0.005811455073868748,-0.006521917460899732,0.006162617230042052,-0.01687898327211006,0.0029105726861013556,-0.018854990480060865,-0.0051608264883266555,0.17324557604854984,0.1447820571594624,0.05714345064049037,0.0032030532400700263,2,0.4482758620689655,-0.8242976648436353,0.052816504607723254,0.012333439946816056,-0.07090886081532172,0.4796729177199536,0.0,0,14.47,0.9,recency 6000
+20261007T141533_s06_reversal_composite,20261007T141533,s06_reversal_composite,f89ef614e077e7f4,"{""FIXED"": true}",full,real-official,23200,0.02842274785380951,0.009637857841758116,2.9490731571762527,0.024846861294774064,0.019238579845004194,0.00613052198409147,0.009173269528149177,0.030247107307279412,0.013630317544539037,0.015256664576374394,0.9974017600540257,0.9991487998432731,0.9888456492264663,0.005228136711783883,3,0.7931034482758621,3.8188480077507982,0.015880595127127382,0.005608242954693059,0.04733187518261663,0.7787994933839403,0.0,0,0.08,0.91,
+20261007T141621_s06_reversal_composite,20261007T141621,s06_reversal_composite,f89ef614e077e7f4,"{""FIXED"": false}",full,real-official,23200,-0.005170119938001447,0.009250874130422904,-0.5588790707895076,0.0021296607173913844,-0.002876039177796862,0.006059041315053947,-0.013061917865118868,0.006452693034069426,-0.00788171663985235,-0.0022917663665910533,0.3358851232814237,0.31745181848514503,0.0633394855368743,0.006374855660274211,4,0.5517241379310345,-0.4520258465936811,0.015842509146532017,0.005005705740246086,0.0033012930959371253,0.7453256456454254,0.0,0,0.91,0.88,
+screen_r06_rank_zFeature.1-zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0361004537911186,,-4.725838157101844,,-0.0209125232666094,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.3-zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0357234067537481,,-4.711931492513845,,-0.0209173879964181,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.4-zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0359259578023551,,-4.681346985841711,,-0.0208538450857774,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2-zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0353484447420783,,-4.627483141825454,,-0.0207564405191072,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_Feature.1,20261007T140000,r06_screen,,,screen,real-official,,-0.0361640692754559,,-4.2395582250817965,,-0.0249890537081088,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_Feature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0361375378632022,,-4.221742389079132,,-0.0247141185741763,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_Feature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0354115285016964,,-4.188764364521028,,-0.0252832025675804,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_Feature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0349481837663366,,-4.112568672319077,,-0.0245402924571377,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.5-zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0222413601117117,,-3.860799030983767,,-0.0177835884597588,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.3*zFeature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0201551282465543,,-3.7551161700057887,,-0.0178058765582449,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2*zFeature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0197483619969694,,-3.6906397436672207,,-0.0174015980632232,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1*zFeature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0198891002708792,,-3.679523334746244,,-0.0174685810384776,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2*zFeature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0198351665927754,,-3.6676773396866302,,-0.0178697098523975,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1*zFeature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0198582828699928,,-3.665275818710697,,-0.017515346483148,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1*zFeature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0197255115588407,,-3.662712917455361,,-0.0176237689724068,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d120_Feature.1,20261007T140000,r06_screen,,,screen,real-official,,-0.0291784122974929,,-3.4173474415394924,,-0.0306998284172547,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d120_Feature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0291377534742101,,-3.409870027747866,,-0.0302058702610737,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d120_Feature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0287281827399984,,-3.400051012583506,,-0.0312564044754364,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_Feature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0163579990052535,,-3.387116490766992,,-0.0417093795826257,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d120_Feature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0282816539001274,,-3.322932579361977,,-0.0302328735485648,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_Feature.6,20261007T140000,r06_screen,,,screen,real-official,,0.0173889661245889,,2.680541777117871,,0.0065336003944153,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1-zFeature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0038913576573943,,-2.642807290211409,,-0.0801959229469954,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d1_Feature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0039730607628366,,-2.5630633834016883,,-0.0793628997049817,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1-zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0153183112267638,,-2.5312002765526582,,-0.0171116431475317,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d24_Feature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0153063243306138,,-2.485766670986296,,-0.0304590500372464,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d24_Feature.1,20261007T140000,r06_screen,,,screen,real-official,,-0.0152627561898714,,-2.475212217455921,,-0.0309102892096333,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.3-zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.015142271452381,,-2.474973398388001,,-0.0168571301888531,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.4*zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0081481021618798,,-2.463829833527794,,-0.0224086010278809,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.4-zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0145956032057446,,-2.4629130558640804,,-0.0169385656412859,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2*zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0080502181307343,,-2.457416639587931,,-0.02257178399571,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2-zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0144826963655145,,-2.4379025381494666,,-0.0172835331478665,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d24_Feature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0148087904476832,,-2.4087191433813064,,-0.0300408468865782,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.3*zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0077665690352082,,-2.3961369984277723,,-0.0235830851333384,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d24_Feature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.01445761320347,,-2.354352366444938,,-0.0294258752744226,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1*zFeature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0074809282067696,,-2.266530560985024,,-0.0231452901816163,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d6_Feature.1,20261007T140000,r06_screen,,,screen,real-official,,-0.0080690567322335,,-2.25128697738822,,-0.0390076924694259,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d6_Feature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.008083522204101,,-2.230570404680021,,-0.0384797697695149,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d24_Feature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.008086756885311,,-2.191833561470774,,-0.0499244250579255,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d6_Feature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.0076519210637637,,-2.177602663225021,,-0.0395056957133363,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d6_Feature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0076295590418952,,-2.1345418580190776,,-0.037759827144588,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d1_Feature.1,20261007T140000,r06_screen,,,screen,real-official,,-0.0031556683678767,,-2.0679145724282906,,-0.0738259991446198,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d6_Feature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.003368097480807,,-1.997833777851981,,-0.0705000109974498,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d1_Feature.2,20261007T140000,r06_screen,,,screen,real-official,,-0.0028882035610642,,-1.9001551961068213,,-0.0683707695706681,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d1_Feature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0030769760121134,,-1.8984207144396497,,-0.0681698494140576,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d120_Feature.5,20261007T140000,r06_screen,,,screen,real-official,,-0.0085007388275109,,-1.7643967562524914,,-0.0343177606180164,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1-zFeature.3,20261007T140000,r06_screen,,,screen,real-official,,-0.003303257251737,,-1.6831948703171853,,-0.0417621604911694,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d6_Feature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0040762151468422,,-1.6385419953247025,,-0.0345722350330468,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2-zFeature.4,20261007T140000,r06_screen,,,screen,real-official,,0.0030510972762844,,1.5932070303571588,,-0.0327208405819564,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d120_Feature.6,20261007T140000,r06_screen,,,screen,real-official,,0.0089756224793452,,1.5339699238908144,,-0.0040268895679351,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d1_Feature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0026761913490263,,-0.9393794924186536,,-0.0268377584615081,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2-zFeature.3,20261007T140000,r06_screen,,,screen,real-official,,0.0020945552875142,,0.8968657779215464,,-0.0315000824632909,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d1_Feature.5,20261007T140000,r06_screen,,,screen,real-official,,0.0005808000858017,,0.7151427668816087,,-0.0794489518161612,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.3-zFeature.4,20261007T140000,r06_screen,,,screen,real-official,,0.0016158962971502,,0.5380732592973907,,-0.0186467439826763,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1-zFeature.4,20261007T140000,r06_screen,,,screen,real-official,,-0.0008766639151325,,-0.4156509212832132,,-0.0419489038787216,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.3*zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0018603353483231,,-0.3373781322033311,,-0.0025262076399885,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.5*zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.001033579034715,,-0.3024540328052569,,-0.0181117219447799,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.1*zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0009145132928352,,-0.164550069739532,,-0.0021637927984478,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.2*zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,-0.0006475425468367,,-0.1165966122578332,,-0.0019831465943354,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_zFeature.4*zFeature.6,20261007T140000,r06_screen,,,screen,real-official,,0.0002566834960394,,0.0459179795437944,,-0.0013771273798745,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r06_rank_d24_Feature.6,20261007T140000,r06_screen,,,screen,real-official,,7.655645969892723e-05,,0.0179667454202115,,-0.0230704363416361,,,,,,,,,,,,,,,,,,,,,research screen trial (honest trial count for DSR)
+screen_r08_A:,20261007T141000,r08_composites,,,screen,real-official,,0.0361298040117948,,4.190633325242467,,0.0143134351015148,,,,0.0090690395444263,,,,,,,,,,,,,,,,,research composite trial
+screen_r08_B:,20261007T141000,r08_composites,,,screen,real-official,,0.0407817402846427,,4.9266888642136415,,0.0168809144027431,,,,0.012492471902219,,,,,,,,,,,,,,,,,research composite trial
+screen_r08_C:,20261007T141000,r08_composites,,,screen,real-official,,0.0388196670956805,,4.9162512095182285,,0.0179097570720049,,,,0.0129587109376055,,,,,,,,,,,,,,,,,research composite trial
+screen_r08_D:,20261007T141000,r08_composites,,,screen,real-official,,0.0400512063616516,,4.830673229725719,,0.0192385798450041,,,,0.013630317544539,,,,,,,,,,,,,,,,,research composite trial
+grid_s06_reversal_composite_48.0_0.0,20261007T142037,s06_reversal_composite,f89ef614e077e7f4,"{""SMOOTH_HALFLIFE"": 48.0, ""SMOOTH_WINDOW"": 192, ""BAND"": 0.0}",grid,real-official,,,,,0.03074735834271032,0.020967512852904283,,,,0.011187804758778142,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s06_reversal_composite_96.0_0.0,20261007T142037,s06_reversal_composite,f89ef614e077e7f4,"{""SMOOTH_HALFLIFE"": 96.0, ""SMOOTH_WINDOW"": 384, ""BAND"": 0.0}",grid,real-official,,,,,0.027259844763721123,0.01998501403612676,,,,0.012710255196287441,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s06_reversal_composite_168.0_0.0,20261007T142037,s06_reversal_composite,f89ef614e077e7f4,"{""SMOOTH_HALFLIFE"": 168.0, ""SMOOTH_WINDOW"": 672, ""BAND"": 0.0}",grid,real-official,,,,,0.024846861294774068,0.019238579845004194,,,,0.013630317544539038,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s06_reversal_composite_336.0_0.0,20261007T142037,s06_reversal_composite,f89ef614e077e7f4,"{""SMOOTH_HALFLIFE"": 336.0, ""SMOOTH_WINDOW"": 1344, ""BAND"": 0.0}",grid,real-official,,,,,0.02383095512456818,0.019716052730881284,,,,0.015601151884747028,,,,,,,,,,,,,,,,,r04 turnover grid
+grid_s06_reversal_composite_672.0_0.0,20261007T142037,s06_reversal_composite,f89ef614e077e7f4,"{""SMOOTH_HALFLIFE"": 672.0, ""SMOOTH_WINDOW"": 2688, ""BAND"": 0.0}",grid,real-official,,,,,0.023221494024399436,0.020337662749419384,,,,0.017453833433247076,,,,,,,,,,,,,,,,,r04 turnover grid
+20261007T144711_s07_extremeness,20261007T144711,s07_extremeness,8e580fa7c8a43c3d,"{""FIXED"": true}",full,real-official,23200,0.015638780481137877,0.009724983225550423,1.6081035944668933,0.01038588215574797,0.007011390050696555,0.006388338610626387,-0.0034867163296018657,0.017913642608979822,0.0036368980187762912,0.005463099471290422,0.8336772619670703,0.8640475635260708,0.0,0.059747438282128675,74,0.6551724137931034,1.165238396683388,0.007912447802877049,0.003374491760134822,0.0009700350533351783,0.8989862282326126,0.0,0,0.07,1.74,
+20261007T144851_s07_extremeness,20261007T144851,s07_extremeness,8e580fa7c8a43c3d,"{""FIXED"": false}",full,real-official,23200,0.012978424283776591,0.010055177443275604,1.290720562316472,0.0014036085643734382,-0.0028650901765216344,0.0063531753126544665,-0.013723230461687198,0.007948690671314549,-0.007133777481707455,-0.002237831621232348,0.3451092944679095,0.32607366095917784,0.0,0.06002815967238876,75,0.4827586206896552,-0.3909761218795628,0.008082832110885431,0.004268702354334874,-0.07013269550955871,0.8848542627812744,0.0,0,2.06,2.23,
+r12_L_336,20261007T161905,r12_s07_variants,,members=L;hl=336.0,screen,real-official,,0.020629969001095108,,3.711376143655161,,0.005551711556178347,0.006411226168664923,,,0.0013498657686039845,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_L_672,20261007T161905,r12_s07_variants,,members=L;hl=672.0,screen,real-official,,0.020629969001095108,,3.711376143655161,,0.009003114739484078,0.006576793614863393,,,0.006635438938121649,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_LD_336,20261007T161905,r12_s07_variants,,members=LD;hl=336.0,screen,real-official,,0.024583441228323746,,4.127783654890152,,0.007011390050696562,0.006388338610626382,,,0.0036368980187763,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_LD_672,20261007T161905,r12_s07_variants,,members=LD;hl=672.0,screen,real-official,,0.024583441228323746,,4.127783654890152,,0.009838079621774446,0.006549070523572209,,,0.007952817545219681,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_LDD_336,20261007T161905,r12_s07_variants,,members=LDD;hl=336.0,screen,real-official,,0.019098868476222067,,3.142435074064486,,0.007913243292702788,0.006563555895585415,,,0.0049221620969799275,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_LDD_672,20261007T161905,r12_s07_variants,,members=LDD;hl=672.0,screen,real-official,,0.019098868476222067,,3.142435074064486,,0.010897012346784973,0.006683477724039406,,,0.009232944285046884,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_LDP_336,20261007T161905,r12_s07_variants,,members=LDP;hl=336.0,screen,real-official,,0.022884548350890727,,4.242411275978266,,0.006929540116330703,0.0063604412388573,,,0.002999713739163167,,,,,,,,,,,,,,,,,pre-declared S07 grid
+r12_LDP_672,20261007T161905,r12_s07_variants,,members=LDP;hl=672.0,screen,real-official,,0.022884548350890727,,4.242411275978266,,0.009802716580291864,0.006505523400424097,,,0.007582674194375136,,,,,,,,,,,,,,,,,pre-declared S07 grid
+20261007T162538_s07_extremeness,20261007T162538,s07_extremeness,a34eb36d828ee554,,full,real-official,23200,0.02738408661930658,0.010018893142950416,2.733244703640224,0.012561080768277118,0.010897012346785053,0.006683477724039407,-0.0006251253769635927,0.022326625618804666,0.009232944285047008,0.008317056971891196,0.9228365832514793,0.9492679558668086,0.19989954000287286,0.016499091773969906,84,0.6896551724137931,1.9830591294616653,0.003961208209627852,0.001664066734900791,0.025595323316974193,0.9610181581103991,0.0,0,0.06,0.21,S07 v2 LDD hl672
+r15_d24_raw_0.5,20261007T172012,r15_timeshare,,"('d24', 'raw', 0.5)",screen,real-official,,0.023838805125258895,,2.901744098295674,,-0.04275044997111745,0.006711372337261764,,,-0.09273065006648416,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d24_raw_0.45,20261007T172012,r15_timeshare,,"('d24', 'raw', 0.45)",screen,real-official,,0.024274189032730254,,2.9346744001489804,,-0.04470326074116224,0.006696741596924411,,,-0.09528375970764695,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d24_sm168_0.5,20261007T172012,r15_timeshare,,"('d24', 'sm168', 0.5)",screen,real-official,,0.015391796361666195,,1.6674232425275795,,0.005779949089730912,0.006626946340121347,,,0.00019188662582096888,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d24_sm168_0.45,20261007T172013,r15_timeshare,,"('d24', 'sm168', 0.45)",screen,real-official,,0.015447269793774919,,1.663302420881771,,0.006134323786491244,0.006648689241360543,,,0.0007759536545508378,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d120_raw_0.5,20261007T172013,r15_timeshare,,"('d120', 'raw', 0.5)",screen,real-official,,0.020104020972100678,,2.512174564497423,,-0.03801736967217199,0.006884668297750191,,,-0.08421632449573874,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d120_raw_0.45,20261007T172013,r15_timeshare,,"('d120', 'raw', 0.45)",screen,real-official,,0.021265110415390007,,2.662662780306885,,-0.04245574469606613,0.006945432145206925,,,-0.09088440310428751,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d120_sm168_0.5,20261007T172013,r15_timeshare,,"('d120', 'sm168', 0.5)",screen,real-official,,0.009469041257481589,,1.039317270647774,,0.0036278015485656087,0.006812316626708857,,,-0.0022774445598052694,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r15_d120_sm168_0.45,20261007T172013,r15_timeshare,,"('d120', 'sm168', 0.45)",screen,real-official,,0.010705356240459717,,1.1741511604994186,,0.001214861074055922,0.0067638617168517,,,-0.004767913391176734,,,,,,,,,,,,,,,,,pre-declared time-share grid
+r16_screen,20261007T173247,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,180 oriented constructions screened (count as trials)
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r16_screen_trial,,r16_x_alpha_screen,,,screen,real-official,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r17_A_336,,r17_probe_design,,,screen,real-official,,0.016357999005253518,,,,0.014637414833808515,0.006254254137060659,,,0.0036571774423269053,,,,,,,,,,,,,,,,,pre-declared S08 probe grid
+r17_A_672,,r17_probe_design,,,screen,real-official,,0.016357999005253518,,,,0.01676014106745537,0.006468637653800187,,,0.009193013266373198,,,,,,,,,,,,,,,,,pre-declared S08 probe grid
+r17_B_336,,r17_probe_design,,,screen,real-official,,0.02930279224803638,,,,0.014059602784580323,0.0061594475870086615,,,0.0062877100720034685,,,,,,,,,,,,,,,,,pre-declared S08 probe grid
+r17_B_672,,r17_probe_design,,,screen,real-official,,0.02930279224803638,,,,0.014299712597878447,0.005999280832875708,,,0.007374845847336865,,,,,,,,,,,,,,,,,pre-declared S08 probe grid
+r17_C_336,,r17_probe_design,,,screen,real-official,,0.02833653083730252,,,,0.019449534321887802,0.0060593462419295295,,,0.010986762251053354,,,,,,,,,,,,,,,,,pre-declared S08 probe grid
+r17_C_672,,r17_probe_design,,,screen,real-official,,0.02833653083730252,,,,0.021562859839928842,0.006159516886740419,,,0.014408374975528451,,,,,,,,,,,,,,,,,pre-declared S08 probe grid
+20261007T173507_s08_two_leg_reversal,20261007T173507,s08_two_leg_reversal,5db907f630e05fdc,,full,real-official,23200,0.03897006478596896,0.009823201092957081,3.9671451716395425,0.028717332388104713,0.021562859839928915,0.006159516886740427,0.011466478332687225,0.03196599168140856,0.014408374975528597,0.01706638353067836,0.9990784676104658,0.9997664140138627,0.7349346980162088,0.017693848047648196,279,0.8275862068965517,3.7602397146052846,0.0040770505721080775,0.0071544879788038316,0.10122832480457751,0.7615513895009374,0.0,0,0.08,0.09,S08 two-leg reversal
+r18_S08_perp_S06,,r18_perp,,,screen,real-official,,-0.009082923578974214,,,,-0.013346283427808012,0.006476633604489918,,,-0.015469940094917185,,,,,,,,,,,,,,,,,pre-declared S08 perp variants
+"r18_S08_perp_S06,S07",,r18_perp,,,screen,real-official,,-0.009093660634315343,,,,-0.013549981005383741,0.006503985199815546,,,-0.01573464472106829,,,,,,,,,,,,,,,,,pre-declared S08 perp variants
+honest_peer_factor_timing,20261007T180843,lab.honest,,peer_factor_timing,screen,real-official,,0.007591471245692921,,0.9475690011374366,,-0.000752352143824937,0.006380720888535894,,,-0.0034317832029183283,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_peer_leadlag,20261007T180910,lab.honest,,peer_leadlag,screen,real-official,,-0.007626962475429013,,-1.2433693132711823,,-0.0050033389625673925,0.005777458063458768,,,-0.012822600410822024,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_peer_netmom,20261007T180925,lab.honest,,peer_netmom,screen,real-official,,0.01405826891325769,,1.8933204606686378,,-0.0032577759803833865,0.006267240319145565,,,-0.008817779811575669,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_timescale_Pd24_168,20261007T180930,lab.honest,,timescale_Pd24_168,screen,real-official,,-0.009771521457256682,,-1.0715153394316794,,-0.009335691025756194,0.006720260323880295,,,-0.027554209084695656,,,,,,,,,,,,,,,,,post-smoothing residual on smoothed S06/S07/S08
+honest_peer_pca_idio_rev_K5,20261007T180949,lab.honest,,peer_pca_idio_rev_K5,screen,real-official,,0.03462798823846628,,4.5990073588953075,,0.021775791617021145,0.00590750943751037,,,0.015479627025367915,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_timescale_d24_raw_hl168.0,20261007T180950,lab.honest,,timescale_d24_raw_hl168.0,screen,real-official,,0.01488267825989601,,2.39177838752005,,-0.0021931645367293004,0.006485558652246,,,-0.018080540380757782,,,,,,,,,,,,,,,,,lab.honest.evaluate
+honest_peer_idio_vol,20261007T181011,lab.honest,,peer_idio_vol,screen,real-official,,0.014542299117996316,,1.597628017448919,,0.007059685519715928,0.006057334021900668,,,0.0066586992517775456,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_peer_bab,20261007T181022,lab.honest,,peer_bab,screen,real-official,,0.0013774850391612748,,0.14832340797866203,,0.006835681656353426,0.006014720320647491,,,0.006650668177559506,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_timescale_Pd48_336,20261007T181040,lab.honest,,timescale_Pd48_336,screen,real-official,,-0.01119474695728272,,-1.1338952706184888,,-0.008963977196543144,0.006448683712631984,,,-0.021648821771456647,,,,,,,,,,,,,,,,,post-smoothing residual on smoothed S06/S07/S08
+honest_timescale_d24_raw_hl672.0,20261007T181052,lab.honest,,timescale_d24_raw_hl672.0,screen,real-official,,0.01488267825989601,,2.39177838752005,,0.000616929362078862,0.00623453955882717,,,-0.01144512888851591,,,,,,,,,,,,,,,,,lab.honest.evaluate
+honest_timescale_d24v_hl168.0,20261007T181214,lab.honest,,timescale_d24v_hl168.0,screen,real-official,,0.014537596188146639,,2.3242313336203595,,-0.004227290099364212,0.006524225367768013,,,-0.0197312940079742,,,,,,,,,,,,,,,,,lab.honest.evaluate
+honest_peer_pca_K5_perp8,20261007T181225,lab.honest,,peer_pca_K5_perp8,screen,real-official,,0.021341595597921172,,3.2250131118547527,,0.009778139420043935,0.006147973491015027,,,0.0036871406081792355,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+oof_ol_mv_l0.1,20261007T181233,agents.offline_learned,,ol_mv_l0.1,screen,real-official,,0.035280459298340026,,4.340199476060286,,0.009957549336263877,0.006021084932969497,,,0.003864742402374195,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_timescale_Bd24_168_15,20261007T181236,lab.honest,,timescale_Bd24_168_15,screen,real-official,,-2.137666591667996e-05,,-0.0022209597410340716,,0.0008882034335848409,0.006469188213264904,,,-0.009114621788908074,,,,,,,,,,,,,,,,,no-trade band execution
+oof_ol_mv_l1,20261007T181240,agents.offline_learned,,ol_mv_l1,screen,real-official,,0.0343069181147158,,4.370538828697417,,0.011077576230225658,0.00594437885154407,,,0.00626910663594388,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_timescale_multiv_hl336.0,20261007T181247,lab.honest,,timescale_multiv_hl336.0,screen,real-official,,0.0165506118192638,,2.450936089713327,,0.0005375875221179141,0.006279218191653693,,,-0.011347259260766372,,,,,,,,,,,,,,,,,lab.honest.evaluate
+oof_ol_mv_l10,20261007T181248,agents.offline_learned,,ol_mv_l10,screen,real-official,,0.02844593465466473,,3.5615096438075193,,0.01099663990885652,0.005942930408345788,,,0.006256046606743038,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_peer_pca_K8_W720,20261007T181248,lab.honest,,peer_pca_K8_W720,screen,real-official,,0.04067864855195543,,5.975393330870192,,0.025904747373139646,0.005860679617211617,,,0.019030192667142072,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+oof_ol_pca5,20261007T181254,agents.offline_learned,,ol_pca5,screen,real-official,,0.03738950305853695,,4.558163256844562,,0.013429802747573574,0.0060961615185732,,,0.008863792182380753,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+oof_ol_icridge,20261007T181305,agents.offline_learned,,ol_icridge,screen,real-official,,0.04129523404982906,,4.809801611565634,,0.01089830853384499,0.006194253297708495,,,0.00667979936889855,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_peer_pca_K12_W336,20261007T181310,lab.honest,,peer_pca_K12_W336,screen,real-official,,0.02775801337146862,,4.781075454856538,,0.00036532841472980437,0.00604562403071516,,,-0.005415003825176022,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+oof_ol_signcons,20261007T181312,agents.offline_learned,,ol_signcons,screen,real-official,,0.03535420673061464,,4.245219768411236,,0.011074957808017613,0.005947342806273131,,,0.0064081593783937,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+oof_ol_diag_sc,20261007T181320,agents.offline_learned,,ol_diag_sc,screen,real-official,,0.04635614362438354,,5.5266367844744995,,0.01430994910761331,0.005977785746898353,,,-0.0022641109220619283,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_peer_pca_K10_W720,20261007T181420,lab.honest,,peer_pca_K10_W720,screen,real-official,,0.03766894234365447,,6.08551006967351,,0.015148288363499017,0.005929962436997006,,,0.008347851029078448,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_peer_pca_K8_W720_perp8,20261007T181458,lab.honest,,peer_pca_K8_W720_perp8,screen,real-official,,0.029086553221919664,,4.459482121183419,,0.01471861527184974,0.005930721434531691,,,0.008543695062579588,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+honest_peer_pca_K8_W1000,20261007T181522,lab.honest,,peer_pca_K8_W1000,screen,real-official,,0.031674283124133694,,4.593562588726787,,0.014246731720539235,0.0058874675327339025,,,0.007444586600792679,,,,,,,,,,,,,,,,,PEER_FACTOR agent
+oof_ol_gbm_d2,20261007T181722,agents.offline_learned,,ol_gbm_d2,screen,real-official,,0.00398945243713125,,0.38700738535534923,,0.004850035725561876,0.006350459257804953,,,0.00023630163366592134,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_skeptic2_peer_pca_K8_W720_hl672,20261007T181924,lab.honest,,skeptic2_peer_pca_K8_W720_hl672,screen,real-official,,0.04067864855195653,,5.975393330870306,,0.025904747373140604,0.0058606796172116435,,,0.019030192667142995,,,,,,,,,,,,,,,,,skeptic2 verification
+honest_skeptic2_peer_pca_K8_W720_hl336,20261007T181951,lab.honest,,skeptic2_peer_pca_K8_W720_hl336,screen,real-official,,0.04067864855195701,,5.9753933308704195,,0.02665995682151486,0.005896145554133047,,,0.018182571981675485,,,,,,,,,,,,,,,,,skeptic2 verification
+honest_ol_full_pca5,20261007T181951,lab.honest,,ol_full_pca5,screen,real-official,,0.05007795838567155,,6.082440564558874,,0.02062959533417337,0.006148540226851581,,,0.0159929379103748,,,,,,,,,,,,,,,,,offline_learned full-dev fixed weights (weights in-sample on dev)
+honest_F5F6NL_f6_absmean336,20261007T182007,lab.honest,,F5F6NL_f6_absmean336,screen,real-official,,0.017927898231005684,,2.089436203296426,,0.006762816477578226,0.006139162504116698,,,0.006302297817950651,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR
+honest_F5F6NL_f6_lvlstd336,20261007T182014,lab.honest,,F5F6NL_f6_lvlstd336,screen,real-official,,-0.012855294979589838,,-1.4861905373470086,,-0.008639082084892332,0.006448464999680495,,,-0.009234698777733051,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR
+honest_skeptic2_peer_pca_K8_W720_hl1344,20261007T182029,lab.honest,,skeptic2_peer_pca_K8_W720_hl1344,screen,real-official,,0.040678648551956305,,5.975393330870532,,0.023608240964807146,0.0057912200249103755,,,0.018413126522129158,,,,,,,,,,,,,,,,,skeptic2 verification
+honest_skeptic1_peer_pca_K8_W720_hl672,20261007T182102,lab.honest,,skeptic1_peer_pca_K8_W720_hl672,screen,real-official,,0.04067864855195543,,5.975393330870192,,0.025904747373139646,0.005860679617211617,,,0.019030192667142072,,,,,,,,,,,,,,,,,skeptic1
+honest_ol_full_mv_l1,20261007T182115,lab.honest,,ol_full_mv_l1,screen,real-official,,0.058216144874481554,,7.4021169492373415,,0.025015196007398727,0.005994748614293318,,,0.020000244708033736,,,,,,,,,,,,,,,,,offline_learned full-dev fixed weights (weights in-sample on dev)
+honest_skeptic1_peer_pca_K8_W720_hl336,20261007T182130,lab.honest,,skeptic1_peer_pca_K8_W720_hl336,screen,real-official,,0.04067864855195543,,5.975393330870192,,0.026659956821517134,0.00589614555413304,,,0.01818257198167779,,,,,,,,,,,,,,,,,skeptic1
+oof_ol_g_mv_l1,20261007T182203,agents.offline_learned,,ol_g_mv_l1,screen,real-official,,0.03250807066100165,,4.125131749981762,,0.011476726542346018,0.006030800249493552,,,0.006647088345120664,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_skeptic1_peer_pca_K8_W720_hl1344,20261007T182204,lab.honest,,skeptic1_peer_pca_K8_W720_hl1344,screen,real-official,,0.04067864855195889,,5.975393330870728,,0.02360397002670101,0.00579130571096301,,,0.018408291001713917,,,,,,,,,,,,,,,,,skeptic1
+oof_ol_g_pca5,20261007T182206,agents.offline_learned,,ol_g_pca5,screen,real-official,,0.031998524625462654,,3.845017540884266,,0.012199313950592719,0.00616447492713259,,,0.007910392674393581,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+oof_ol_g_nested,20261007T182308,agents.offline_learned,,ol_g_nested,screen,real-official,,0.02641604154756815,,3.3182053460267253,,0.0075266474022207585,0.0060649938148867166,,,0.0027907404936934966,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+oof_ol_g_pca5@1344,20261007T183233,agents.offline_learned,,ol_g_pca5@1344,screen,real-official,,0.03490808592714898,,4.184234263753379,,0.016180711227125413,0.006283380236663433,,,0.011919071798593887,,,,,,,,,,,,,,,,,OOF leave-period-out (+-1 buffer) learned weights
+honest_ol_full_g_pca5_1344,20261007T183521,lab.honest,,ol_full_g_pca5_1344,screen,real-official,,0.048529174362327954,,5.80306160899779,,0.022928785276786812,0.0062504073388014985,,,0.01860152348582783,,,,,,,,,,,,,,,,,offline_learned grouped full-dev fixed weights (weights in-sample on dev)
+honest_F5F6NL2_comp4,20261008T023414,lab.honest,,F5F6NL2_comp4,screen,real-official,,-0.004500829190999434,,-0.49446670808033233,,-0.00335946458131468,0.00595016187350563,,,-0.003899388709657648,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 2
+20261008T050608_s09_pca_idio_reversal,20261008T050608,s09_pca_idio_reversal,42e5f14f13d6ed58,"{""PERP_S08"": false}",full,real-official,23200,0.04384254788329496,0.009204460198071402,4.763185123281996,0.032779291843787674,0.025904747373137943,0.005860679617211604,0.016629848631475645,0.03524993487185627,0.01903019266714048,0.02091580902544273,0.9999643227815016,0.9999955684119166,0.9341395500317746,0.017116587872310317,325,0.8275862068965517,4.494847271866994,0.00394700967666829,0.0068745569714011735,0.05130807017541976,0.7158797988126868,0.0,0,0.1,0.37,S09 --set PERP_S08=False
+20261008T050626_s09_pca_idio_reversal,20261008T050626,s09_pca_idio_reversal,42e5f14f13d6ed58,"{""PERP_S08"": true}",full,real-official,23200,0.024142094281259983,0.009479787999459425,2.5466913693256283,0.02089354159736773,0.01471861527184817,0.005930721434531679,0.005703745989756559,0.024250003052422187,0.00854369506257813,0.011829210853996902,0.9869548787185582,0.9936744320539809,0.3292981175119197,0.01732683789894516,326,0.6896551724137931,1.8448974469301365,0.003956461282201288,0.006174917599866806,0.06241433551125232,0.7755021961696763,0.0,0,0.09,0.43,S09 --set PERP_S08=True
+honest_F5F6NL3_crev_f6ext,20261008T050647,lab.honest,,F5F6NL3_crev_f6ext,screen,real-official,,0.007680346828584593,,1.4294670374425595,,0.0059187426330531015,0.0063239338693069445,,,0.0009477870844044544,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+honest_F5F6NL3_crev_f5act,20261008T050701,lab.honest,,F5F6NL3_crev_f5act,screen,real-official,,0.0028349348973650164,,0.4310523020472851,,0.011072031106074829,0.006257769830436104,,,0.007696489712851414,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+honest_F5F6NL3_crev_f6sgn,20261008T050708,lab.honest,,F5F6NL3_crev_f6sgn,screen,real-official,,-0.00811030989987484,,-1.4032567168542842,,-0.007913299204660064,0.00607331713642104,,,-0.012545372435738639,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+honest_F5F6NL3_f6abs_orth,20261008T050736,lab.honest,,F5F6NL3_f6abs_orth,screen,real-official,,-0.009802007635358637,,-1.1387254108467408,,-0.007156098389947591,0.005922076056489583,,,-0.010597171652476983,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+honest_F5F6NL3_crev24_f5spk,20261008T050745,lab.honest,,F5F6NL3_crev24_f5spk,screen,real-official,,0.005532378798688946,,1.088884763689597,,-0.0034472978068656713,0.00598482375821573,,,-0.008334884701940926,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+honest_F5F6NL3_crev_f5act_hl336,20261008T050805,lab.honest,,F5F6NL3_crev_f5act_hl336,screen,real-official,,0.0028349348973650164,,0.4310523020472851,,0.007587414712530763,0.006294257402179305,,,0.002804904591475868,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+honest_F5F6NL3_combo_e1e2,20261008T050816,lab.honest,,F5F6NL3_combo_e1e2,screen,real-official,,0.006293487439622426,,1.0191823086013714,,0.014081196040674235,0.006317695346313496,,,0.01025631893027162,,,,,,,,,,,,,,,,,agent F5F6_NONLINEAR round 3
+20261008T061113_s09_pca_idio_reversal,20261008T061113,s09_pca_idio_reversal,42e5f14f13d6ed58,,quick,real-official,2400,0.02270446745656711,0.026735495938227088,0.8492255954041865,0.026757033863142758,0.01936055706107073,0.019137212457483635,-0.014033513539526369,0.05604874143134517,0.011964186065487591,0.005464014988609224,0.7045207898262884,0.8439505193011281,0.11593098625159626,0.04225963728438637,334,0.6666666666666666,1.603205018561563,0.003984938507516027,0.007396335266893225,-0.12985583628570613,0.6870211816234485,0.0,0,0.07,0.3,post-migration smoke test
+honest_S09_timing_perp_hl48,20261009T064709,lab.honest,,S09_timing_perp_hl48,screen,real-official,,0.015068234696533723,,1.6682432423306668,,0.0014620745295508095,0.0065777248658866645,,,-0.010830470412266618,,,,,,,,,,,,,,,,,C5 prep: S09 fast minus slow (perp to pot entry)
+honest_S09_timing_perp_hl96,20261009T064739,lab.honest,,S09_timing_perp_hl96,screen,real-official,,0.015351912088082476,,1.676574075351596,,0.0038146534125044172,0.006488965602783721,,,-0.006005869504893203,,,,,,,,,,,,,,,,,C5 prep: S09 fast minus slow (perp to pot entry)

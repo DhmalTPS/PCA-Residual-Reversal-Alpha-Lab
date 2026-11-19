@@ -1,0 +1,86 @@
+{
+  "file": "seasons/S1/C4/strategies/s01_ridge_xs.py",
+  "passed": true,
+  "checks": [
+    {
+      "check": "shape",
+      "status": "PASS",
+      "detail": "type=DataFrame shape=(49351, 20)"
+    },
+    {
+      "check": "finite",
+      "status": "PASS",
+      "detail": "no NaN/inf"
+    },
+    {
+      "check": "demean",
+      "status": "PASS",
+      "detail": "max |row sum| / median L1 = 2.90e-16"
+    },
+    {
+      "check": "determinism",
+      "status": "PASS",
+      "detail": "max rel diff = 0.00e+00"
+    },
+    {
+      "check": "reload",
+      "status": "PASS",
+      "detail": "pickle 0.00 MB, max rel diff = 0.00e+00"
+    },
+    {
+      "check": "causality",
+      "status": "PASS",
+      "detail": "rows<=t with vs without 7403 later rows: max rel diff = 0.00e+00"
+    },
+    {
+      "check": "row_shift",
+      "status": "PASS",
+      "detail": "start moved by 1009 rows, compared after 3000-row burn-in: max rel diff = 0.00e+00 (tol 1e-06), sign agreement 1.0000"
+    },
+    {
+      "check": "nan_robust",
+      "status": "PASS",
+      "detail": "1% NaN injected"
+    },
+    {
+      "check": "shuffle_robust",
+      "status": "PASS",
+      "detail": "row-permuted train/predict"
+    },
+    {
+      "check": "short_batch",
+      "status": "PASS",
+      "detail": "400-row batch and all-zero target"
+    },
+    {
+      "check": "flat",
+      "status": "PASS",
+      "detail": "OOS flat fraction 0.0000, longest run 0 h (whole frame incl. warm-up: 0.0007, 36 h)"
+    },
+    {
+      "check": "train_time",
+      "status": "PASS",
+      "detail": "17.6 s (hard 240 s)"
+    },
+    {
+      "check": "train_budget",
+      "status": "PASS",
+      "detail": "17.6 s (gate-comfort budget 30 s)"
+    },
+    {
+      "check": "predict_time",
+      "status": "PASS",
+      "detail": "23.8 s on 49351 rows (hard 60 s)"
+    },
+    {
+      "check": "gate_projection",
+      "status": "PASS",
+      "detail": "init+train+predict = 41.4 s -> x50 retrains = 34.5 min"
+    }
+  ],
+  "timing": {
+    "init": 1.170000177808106e-05,
+    "train": 17.602201000001514,
+    "predict": 23.79462530001183
+  }
+}
