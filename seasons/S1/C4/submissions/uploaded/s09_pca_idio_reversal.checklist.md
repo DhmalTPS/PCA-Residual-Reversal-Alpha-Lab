@@ -19,6 +19,6 @@ Evidence (fill from experiments/registry.csv and reports/):
 - [x] submitted >= 24 h before the deadline (2026-10-08; close 2026-10-15)
 
 Rules compliance:
-- [ ] own original work; only OSI-licensed libraries (numpy/pandas/scikit-learn/lightgbm: BSD/MIT)
-- [ ] no external data; no hand labelling
+- [x] own original work; only OSI-licensed libraries (numpy/pandas/scikit-learn/lightgbm: BSD/MIT)
+- [x] no external data; no hand labelling
 - [ ] code not shared privately with anyone
