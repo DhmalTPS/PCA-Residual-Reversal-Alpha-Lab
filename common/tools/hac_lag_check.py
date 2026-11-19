@@ -6,7 +6,7 @@ long-run variance and overstates t-stats. This re-runs the official per-period e
 strategy with several lags and prints IC t, Sharpe +- s.e. and DSR side by side.
 
 Usage (from the repo root, organiser package unpacked under vendor/):
-    ALPHANOVA_CYCLE=S1/C4 python common/tools/hac_lag_check.py seasons/S1/C4/strategies/s09_pca_idio_reversal.py
+    ALPHANOVA_CYCLE=S1/C4 python common/tools/hac_lag_check.py seasons/S1/C4/strategies/s09_pca_idio_reversal.py [--as-of RUN_ID_PREFIX]
 """
 from __future__ import annotations
 
@@ -28,7 +28,14 @@ def main(argv=None) -> int:
     if not argv:
         print(__doc__)
         return 2
+    as_of = None
+    if "--as-of" in argv:
+        i = argv.index("--as-of"); as_of = argv[i + 1]; del argv[i:i + 2]
     base = paths.settings()
+    if as_of:  # registry as it stood when this run was logged (trials after it are excluded)
+        full = registry.load()
+        cut = int(full.index[full["run_id"].astype(str).str.startswith(as_of)][0])
+        registry.load = lambda: full.iloc[:cut].copy()
     # read-only run: never touch the experiment registry or run store
     registry.append = lambda *a, **k: None
     registry.save_run = lambda *a, **k: "(not saved)"

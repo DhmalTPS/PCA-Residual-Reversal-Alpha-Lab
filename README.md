@@ -38,7 +38,7 @@ answers here, for two reasons I measured early on:
 | Component | What it does | Where |
 |---|---|---|
 | Per-period OOS protocol | For each period file: train on all rows except the last 800, minus a 127 h embargo (120 h horizon + 1 h lag + 6 h buffer); build features on the full file; score only the last 800 rows. Dev = periods 001-029; vault = 030-031, opened once per candidate. | `lab/official.py`, `lab/paths.py` |
-| Honest harness | Net SR at 5 and 10 bp, Newey-West s.e. (lag 48), 90% stationary-bootstrap CI, IC with NW t, share of positive periods, cosine overlap with occupied signal directions, in-sample gate SR, recent-period and vault SR | `lab/honest.py`, `lab/metrics.py` |
+| Honest harness | Net SR at 5 and 10 bp, Newey-West s.e. (default lag 48; see the HAC correction below), 90% stationary-bootstrap CI, IC with NW t, share of positive periods, cosine overlap with occupied signal directions, in-sample gate SR, recent-period and vault SR | `lab/honest.py`, `lab/metrics.py` |
 | Deflated Sharpe | Every `evaluate()` call is appended to `experiments/registry.csv`. DSR uses that trial count and the cross-trial SR dispersion. | `lab/registry.py`, `lab/metrics.py` |
 | Permutation null | Emulates the organiser's gate: rows of features and returns are permuted jointly, the target is recomputed from the permuted returns, the model is retrained, and the result is judged on net Sharpe | `lab/nulls.py`, `tools/shuffle_gate.py` |
 | Pre-registered bar | Fixed before a server novelty check is spent: SR5 >= 0.0133, CI lower bound > 0, SR10 > 0.008, >= 65% positive periods, DSR >= 0.5, max \|cos\| with occupied legs <= 0.35. `admissible_v2` adds recent SR > 0 and vault SR >= 0. | `lab/honest.py`, `seasons/S1/C5/PREREGISTRATION.md` |
@@ -66,7 +66,7 @@ unless stated otherwise.
 |---|---|
 | S09 dev net SR @5 bp | **+0.0259**, 90% CI [+0.0166, +0.0352] |
 | S09 dev net SR @10 bp (stress) | +0.0190 |
-| IC t / periods positive / DSR | **3.6 / 83% / 0.93** (N = 325 trials logged at evaluation; the C4 registry ends at 343) |
+| IC t / periods positive / DSR | **3.6 / 24 of 29 (83%) / 0.95 at selection** (N = 325 trials logged at evaluation). Counting all 337 trials in the C4 registry, the DSR is about 0.002, because later trials widened the spread of Sharpe ratios across trials. See `seasons/S1/C4/reports/hac_lag_check.md` |
 | HAC correction | The original screen used a Newey-West lag of 48 h, which is shorter than the 120 h overlap of the target, and gave IC t 4.8. With a lag of 120 h (127 h: 3.5) the IC t is 3.6, and Sharpe is unchanged. See `seasons/S1/C4/reports/hac_lag_check.md` and `common/tools/hac_lag_check.py`. |
 | Stability | half-samples 001-014 / 015-029: +0.025 / +0.027; smoothing half-life 336-1344 h: +0.024 to +0.027 |
 | Permutation null (in-sample) | real -0.0116 vs null -0.0246 +- 0.0037, z 3.5: pass |
