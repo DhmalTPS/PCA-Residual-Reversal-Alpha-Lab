@@ -9,6 +9,7 @@ broken controls. The signal passed the organiser's gates; its edge did not survi
 
 - AlphaNova Biweekly Competition, "Cross-Sectional Signal Forecasting", Season 1, cycles C4 and C5
   (October 2026). Solo, live-scored, run by a fund.
+- **Authorship:** the research design, evaluation protocol and final selection are mine. I used AI coding assistants for parts of the implementation and for adversarial review.
 - Task: at each hour, output a cross-sectionally de-meaned signal over J = 20 anonymised assets. The score is the
   Sharpe of `r(i) = <P(i-1), X(i)> - c * ||P(i-1) - P(i-2)||_1` with c = 5 bp, where X is a proprietary,
   constructed return panel. The target is undisclosed, and the six features are anonymised.
@@ -65,7 +66,8 @@ unless stated otherwise.
 |---|---|
 | S09 dev net SR @5 bp | **+0.0259**, 90% CI [+0.0166, +0.0352] |
 | S09 dev net SR @10 bp (stress) | +0.0190 |
-| IC t / periods positive / DSR | **4.8 / 83% / 0.93** (N = 325 trials logged at evaluation; the C4 registry ends at 343) |
+| IC t / periods positive / DSR | **3.6 / 83% / 0.93** (N = 325 trials logged at evaluation; the C4 registry ends at 343) |
+| HAC correction | The original screen used a Newey-West lag of 48 h, which is shorter than the 120 h overlap of the target, and gave IC t 4.8. With a lag of 120 h (127 h: 3.5) the IC t is 3.6, and Sharpe is unchanged. See `seasons/S1/C4/reports/hac_lag_check.md` and `common/tools/hac_lag_check.py`. |
 | Stability | half-samples 001-014 / 015-029: +0.025 / +0.027; smoothing half-life 336-1344 h: +0.024 to +0.027 |
 | Permutation null (in-sample) | real -0.0116 vs null -0.0246 +- 0.0037, z 3.5: pass |
 | Organiser gates | passed the real overfitting gate; novel at 61.25 deg (rho 0.481) against the 60 deg bar |
