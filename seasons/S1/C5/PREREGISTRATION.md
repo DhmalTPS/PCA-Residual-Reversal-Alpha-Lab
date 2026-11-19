@@ -48,3 +48,11 @@ S06, S07, S08, S09). A C5 candidate must be <= 0.5 correlated with S09 as submit
   030-031), because S09's board result (0.0028) matched its vault (-0.010) and not its full-history SR (+0.026);
   (b) the submission budget is used as measurement: up to ~12 honest, gate-passing, mutually |rho| <= 0.5 candidates
   may be uploaded over the cycle, ranked by the recency proxy, then judged by their board Sharpe; (c) bars 1-3, 5, 6 stay.
+
+## Deviations (recorded 2026-11-19, after the cycle closed; not a contemporaneous amendment)
+* Rule "A candidate that fails ANY of 1-5 does not get a novelty check" and A1(c) were not followed: A (full SR
+  +0.0111), AB (+0.0125) and L240 (+0.0064) failed bar 1 (SR5 >= 0.0133) and were novelty-checked anyway, treated as
+  measurements under A1(b). Only Z (the 4th check) met the bar.
+* Stop rule "Max 3 novelty checks in C5": 4 checks were used. The reason for the 4th (the blocker model was refuted
+  and Z was the first candidate to pass admissible_v2) is in STATUS.md, but no amendment was written before it.
+* All four checks came back not novel (59.18, 50.38, 50.78, 58.14 deg); nothing was submitted.

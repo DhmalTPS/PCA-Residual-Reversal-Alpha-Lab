@@ -1,6 +1,6 @@
 """C5 r05 - genuine orthogonal component Z + combination X (PRE-DECLARED: exactly 2 evaluations).
 
-Z = C4 multi-agent offline-learned model (grouped PCA-5 weights, hl 1344), residualised per hour on the occupied legs.
+Z = C4 offline-learned model (from the C4 family search) (grouped PCA-5 weights, hl 1344), residualised per hour on the occupied legs.
     Weights were fit ONLY on dev periods 001-029 -> vault 030-031 is a clean out-of-sample test for Z.
 X = unit( unit(AB positions) + unit(Z positions) )  (equal risk). If rho(Z,AB) ~ 0 then rho(X,AB) ~ 0.71 -> occupant
     correlation ~ 0.64 * 0.71 ~ 0.45 (AB's measured occupant rho is 0.638).

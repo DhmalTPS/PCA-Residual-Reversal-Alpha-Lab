@@ -1,9 +1,10 @@
 # S1/C5 - cycle notes
 
-* Opened: 2026-10-08
+* Opened: 2026-10-09
 * Package: see downloads/ (originals) and vendor/ (as shipped - never edit vendor files)
 * Status / decision log: STATUS.md (append newest first)
-* Outcome: (fill at close: submissions, server verdicts, board rank, lessons) and add one line to <ROOT>/JOURNAL.md
+* Outcome: no submission; 4 novelty checks, all not novel (59.18, 50.38, 50.78, 58.14 deg); factor-residual reversal
+  family saturated. Three of the four checks deviated from the pre-registration (see PREREGISTRATION.md, "Deviations").
 
 ## First steps (proven workflow, see <ROOT>/README.md)
 1. python common/tools/set_cycle.py S1/C5

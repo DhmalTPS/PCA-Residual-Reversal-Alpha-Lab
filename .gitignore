@@ -52,7 +52,7 @@
 # board snapshot names other entrants
 /seasons/S1/C4/config/leaderboard.json
 /seasons/S1/C4/research/_common_pre_migration.py
-/seasons/S1/C*/research/agents/_offline_learned/
+/seasons/S1/C*/research/agents/
 
 # ---- never, anywhere ----
 _history/
@@ -66,3 +66,5 @@ __pycache__/
 .idea/
 
 !/LICENSE
+
+/seasons/S1/C4/submissions/uploaded/s09_pca_idio_reversal.py

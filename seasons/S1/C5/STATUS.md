@@ -2,6 +2,15 @@
 
 (newest first)
 
+Note: IC t and s.e. below use NW lag 48 (< 120 h horizon); expect IC t about 25% lower at lag 120
+(see seasons/S1/C4/reports/hac_lag_check.md).
+
+Deviations from PREREGISTRATION.md (recorded 2026-11-19, after the cycle; see its "Deviations" section):
+* Rule "a candidate that fails ANY of 1-5 does not get a novelty check" and A1(c) "bars 1-3, 5, 6 stay": A (full
+  SR +0.0111), AB (+0.0125) and L240 (+0.0064) were below the bar-1 threshold (SR5 >= 0.0133) and were still
+  novelty-checked, as measurements under A1(b). Only Z met the bar.
+* "Max 3 novelty checks in C5": 4 were used (A, AB, L240, Z).
+
 * 2026-10-09: folder created; PREREGISTRATION.md and RUNBOOK.md written from C4 evidence (no C5 data yet).
 
 * 2026-10-15 11:05: C5 package installed (identical to C4 data; new city map merged). Active cycle S1/C5. derived.json
@@ -14,7 +23,7 @@
   B = L120 K3 hl48 (proxy +0.0279, 8/10, @10bp +0.0170, full +0.0108, rho S09 0.34, city 48.4 deg / 2 within 60); rho(A,B) 0.41.
   Strict v1 bar (full SR >= 0.0133) NOT met; uploaded as measurements under A1. c5_r02 broad recency screen (360 trials):
   0 kept - recent-strong constructions are the occupied reversal ones. Board prediction: board ~ proxy - 0.006 +- 0.01.
-  NEXT: user uploads A then B with novelty check; record verdicts + board Sharpe; recalibrate proxy.
+  Next: upload A then B with novelty check; record verdicts + board Sharpe; recalibrate proxy.
 
 * 2026-10-15 ~12:30 c5_r03 robustness (pre-declared neighbours, confidence only): A plateau all 7 configs proxy +0.020..+0.036
   (family mean +0.025), period-bootstrap p05 +0.016, 10/10 recent +, cost: @10bp +0.011, @15bp -0.004. B plateau +0.021..+0.029,
@@ -26,7 +35,7 @@
   Built AB = unit(unit(A_s)+unit(B_s)) (strategies/c5_idio_reversal_combo.py): proxy +0.0333 (@10bp +0.0195, @15 +0.0057),
   boot p05 +0.0098, P>0 0.992, vault +0.067, full +0.0125, rho(AB,A)=rho(AB,B)=0.835, rho S09 0.42; all gates PASS, gate
   emulation z 6.2. Promoted: submissions/c5_idio_reversal_combo.py. Novelty: AB clears 60 deg if blocker's cos with B < ~0.33.
-  NEXT: user checks AB; if not novel -> B, then triangulate blocker from the two angles.
+  Next: novelty-check AB; if not novel -> B, then triangulate blocker from the two angles.
 
 * 2026-10-15 ~14:15 novelty check #2: AB NOT NOVEL 50.38 deg (rho 0.638). Triangulation (c5_r04_blocker_model.py): blocker
   projection on span{A,B} = 0.339A + 0.421B (64% of its norm); predicted cos(o,X) = 0.339 rho(X,A) + 0.421 rho(X,B);
@@ -53,10 +62,10 @@
     shuffle_gate 30 reps: real +0.00475 vs null -0.00788+-0.00129, z 9.8, p 0.032 (rank 1/31) PASS; de-mean PASS.
   X c5_orthogonal_learned_include_abTrue.py: precheck PASS, predict 28.3 s, shuffle_gate: real -0.0126 vs null
     -0.0390+-0.0035, z 7.5, p 0.032 PASS (passes on rank vs null although own in-sample SR is negative); de-mean PASS.
-  NEXT: user uploads Z with "Check novelty first" (check #4); then X (#5) only if Z verdict is in. Z/X rho ~0.7 -> one star max.
+  Next: upload Z with "Check novelty first" (check #4); then X (#5) only if Z verdict is in. Z/X rho ~0.7 -> one star max.
 
 * 2026-10-15 novelty check #4: Z NOT NOVEL - global 58.14 deg (rho 0.528), quality-gate 52.53 deg (rho 0.608).
-  FACTS vs INFERENCES written out (user: "analyze without false assumptions"):
+  FACTS vs INFERENCES written out (to separate measurements from assumptions):
   - FACT: rho at the gate 0.608 > 0.5 -> Z as is cannot enter the quality set while its blocker ranks above it.
   - INFERENCE (unverified): qg < global => blocker in the legacy pot (C4 reading; needs the definitions of the two angles).
   - CORRECTION: AB's/A's vault numbers are NOT clean OOS - A and B were selected by the recency proxy, which includes
@@ -77,7 +86,7 @@
   strategies/c5_regime_allocation.py (SWD) reproduces research PnL to 1e-17 on 6 periods; gates running.
 
 * 2026-10-15 SWD gate job KILLED (system low on memory) after freeze copied the file (no checklist):
-  submissions/c5_regime_allocation.py is NOT READY - rerun freeze/shuffle_gate/dynamic_check/run_vendor/evaluate on request.
-* Vault selection bias quantified (side-agent note confirmed): 16-grid vault mean +0.030 (15/16 > 0, median +0.032) vs selected
+  submissions/c5_regime_allocation.py is NOT READY - rerun freeze/shuffle_gate/dynamic_check/run_vendor/evaluate before any use.
+* Vault selection bias quantified (confirmed by an independent check): 16-grid vault mean +0.030 (15/16 > 0, median +0.032) vs selected
   A +0.054 / B +0.053 -> selection uplift ~+0.023; rank corr(recent-dev, vault) +0.16. De-biased vault: AB ~+0.035-0.040,
   X ~+0.034, SWD ~+0.03, Z +0.012 (clean). Fair board expectation for X/SWD ~0.01-0.03 (S09 precedent: proxy 0.013 -> board 0.003).

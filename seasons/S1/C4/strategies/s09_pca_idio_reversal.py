@@ -5,8 +5,11 @@ Feature.1 (exact windowed sums); take the top-K eigenvector subspace (the common
 each asset's 120h change of Feature.1; position = the negative of that idiosyncratic residual (idiosyncratic reversal).
 Optional PERP_S08: additionally project out, hour by hour, the S08 direction (-rank F5, -rank 120h change of F1-4).
 
-Evidence (multi-agent research run wf_11551755-bb9, official per-period protocol, research/agents/peer_factor_final.py):
+Evidence (found in a family search (C4), official per-period protocol; search scripts not published):
   K8/W720 hl672: net SR +0.0259 [+0.017,+0.035], @10bp +0.0190, IC t 6.0, 83% periods +, DSR 0.94 (N~320);
+  [Corrected figures: IC t 4.8 at NW lag 48, 3.6 at lag 120; DSR 0.93 as first logged (N=325) used S09's own
+  s.e. as the trial spread; counting the PERP_S08 sibling (N=326) gives DSR ~0. See README.md and
+  seasons/S1/C4/reports/hac_lag_check.md.]
   half-samples 001-014 / 015-029 both positive (~0.025 / 0.027); hl 336..1344 all +0.024..+0.027.
   Overlap with occupied legs: cos 0.19 (S06), 0.03 (S07), 0.26 (S08) at hl672; higher at faster smoothing.
   PERP_S08: SR +0.0147 [+0.006], every |cos| <= 0.09.

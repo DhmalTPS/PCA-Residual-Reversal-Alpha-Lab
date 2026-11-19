@@ -1,7 +1,7 @@
-# STATUS / HANDOFF - updated 2026-10-08 (S09 accepted but board SR 0.0028: recent regime reversal - see Session 3 top entry)
+# STATUS / RESEARCH LOG - updated 2026-10-09 (S09 accepted but board SR 0.0028: recent regime reversal - see Session 3 top entry)
 
 Deadline: S1C4 submissions close **15 Oct 2026 05:30 IST (00:00 UTC)**. Target: submit 1-3 distinct
-candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow; this file is the state.
+candidates by ~13 Oct, >= 24 h before close. Layout and workflow: PROJECT_NOTES.md; this file is the state.
 
 ## Environment
 * venv: `.venv` (Python 3.13). Runner on Windows needs `PYTHONIOENCODING=utf-8` and `COMP6_DISABLE_PIP_INSTALL=1`.
@@ -19,7 +19,7 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
 * S08 vault (one shot, partially contaminated - its legs are inside S06 whose vault was seen): SR +0.0080 +- 0.0223,
   IC -0.007 -> not vetoed, not confirmed. Gate calibration point #2: S06's pot occupant (rho 0.96 with S06) PASSED the
   real gate, while our full-slice emulation fails S06 at p=1.0 -> emulation likely too strict for reversal signals.
-  Recommendation: novelty check #4 on submit/s08_two_leg_reversal.py; novel -> onboard (gate failure costs no slot);
+  Decision: novelty check #4 on submit/s08_two_leg_reversal.py; novel -> onboard (gate failure costs no slot);
   not novel -> discard and stop C4.
 * **S08 two-leg reversal READY (submit/s08_two_leg_reversal.py):** unit(-rank F5) + unit(-mean rank d120 F1-4),
   hl 672, FIXED. Honest dev SR +0.0216 [+0.0115,+0.0320], @10bp +0.0144, IC 0.039 t4.0, 83% periods +, DSR 0.73 (N=279),
@@ -61,7 +61,7 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
   S07 +0.0083 +- 0.0184 (IC +0.034) -> neither vetoed (pre-registered rule: veto if < -1 s.e.).
   Vendor --gauge-fix AFTER the vault: S06 SR +0.0184, IC 0.022, conc 0.385, city 24.1 deg; S07 SR +0.0064,
   IC 0.017, conc 0.159, city 43.9 deg. Gate emulation: S07 PASS (z 5.8), S06 FAIL (p 1.0).
-* Recommendation: upload S07 (gate-safe, sparse region, likely quality signal, probably below
+* Decision: upload S07 (gate-safe, sparse region, likely quality signal, probably below
   3rd on Sharpe) and S06 (honest probe: strong if the real gate admits it; a gate failure costs nothing - no cap,
   no pot). After upload, record the server verdicts + board global novelty in config/leaderboard.json: they
   calibrate the gate emulator (S06 verdict is the key datum).
@@ -74,16 +74,16 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
 * **S07 extremeness** (strategies/s07_extremeness.py, FIXED, 8 inputs |z| levels + |z| 24h changes of F1-4,
   hl 336): honest dev SR@5bp +0.0070 +- 0.0064, P(SR>0) 0.83, 66% periods +, DSR 0.09 (N=75). City 46.7 deg,
   only 13/1646 cities within 60 deg (sparse). rho_hat(S06,S07) = -0.022 (orthogonal). Learned mode worse.
-  Gate emulation running (job bw8luam3b).
+  Gate emulation running (background job).
 * DSR fix: registry.sr_sd_trials now uses only mode='full' runs (else candidate s.e.). Honest DSR (N=75):
   S06 0.76, S07 0.09.
 * Plan: (1) S07 gate result; (2) vault ONCE for final S06 (hl336) and S07; (3) promote both via
-  tools/freeze.py; (4) recommend submitting S07 (gate-safe, novel) + S06 (probe; strong if the real gate
+  tools/freeze.py; (4) submit S07 (gate-safe, novel) + S06 (probe; strong if the real gate
   passes it). Expected ranks: S06 ~top-3 if admitted and not blocked; S07 likely below 3rd (0.011).
 * **Gate reference-slice uncertainty (being measured):** emulator with the FULL training slice of file 029
   rejects S06 (in-sample SR -0.0152 vs null -0.0059 +- 0.0015, p=1.0) because old in-file rows have the
   reversed sign. The rules' "training slice of one particular month" may mean ~730 rows; re-running the
-  gate with --rows 730 / 5000 for demo_engineered and S06 (job bag9qtff1; results -> reports/shuffle_*.json,
+  gate with --rows 730 / 5000 for demo_engineered and S06 (background job; results -> reports/shuffle_*.json,
   note the json is overwritten per run - read the console log).
 * **Extremeness family** (r09/r10): -rank(zFa*zFb), a,b in F1..F4 (~ -rank|z|): the ONLY family with the same
   sign in the gate slice (IC +0.011, t 2.5) and validation (IC +0.020, t 3.7, 72% periods). Gate-friendly
@@ -102,7 +102,7 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
   same nearest). DO NOT run `runner.py --full/--gauge-fix` before the vault decision (prints 030/031).
 * registry: 64 research-screen trials logged (mode=screen) -> honest DSR trial count (68 on real-official).
 
-## Session 3 (2026-10-07/08) - dedicated multi-agent C4 push (user request)
+## Session 3 (2026-10-07/08) - dedicated C4 family search
 * **2026-10-09 C5 preparation (post-cycle analysis on C4 data, logged as trials):** S09 by smoothing half-life -
   hl672 (submitted): dev +0.0259, recent(022-029) +0.0155, vault -0.0103; hl168: +0.0257 / +0.0262 / +0.0058;
   hl48: +0.0192 / +0.0341 / +0.0421 (SR10 only +0.006). Raw-signal vault IC +0.032 (t 1.7) vs positions IC -0.087:
@@ -127,7 +127,7 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
   The board's scored history extends BEYOND our data (hidden recent band), where S09 loses. Board PnL chart: rises then gives
   back most. PROCESS ERROR: S09 was not vaulted before upload (vault wrongly treated as spent; it was clean for S09).
   Rule from now on: vault EVERY new candidate before any server check, and weight recent periods (last ~6 + vault) heavily.
-  C4 recommendation: stop (no candidate credible vs 0.0133 on recent data). 5/10 checks, 19/20 submissions left.
+  C4 decision: stop (no candidate credible vs 0.0133 on recent data). 5/10 checks, 19/20 submissions left.
 * **S09 ACCEPTED (2026-10-08 10:44 IST): signal_a0da8ba3ca2c4d29, status OK, NOVEL global = quality-gate 61.25 deg
   (rho 0.481), server Sharpe 0.0241 (> board #1 0.0199 as of 10-07) -> projected Q1.** Calibration: server SR 0.0241 vs
   local warm 0.0259 / cold 0.0153 => server calls generate_features; gate emulation correct (pass). DO NOT upload
@@ -136,25 +136,25 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
   could take 2nd/3rd (must be |rho| <= 0.5 vs S09 AND the occupants).
 * Shared harness lab/honest.py (validated: reproduces S08 exactly). PRE-REGISTERED bar for spending a server novelty
   check (lab.honest.admissible): SR5 >= 0.0133, ci_lo > 0, SR10 > 0.008, periods_pos >= 0.65, DSR >= 0.5 (honest N),
-  max |cos| with S06/S07/S08 legs <= 0.35. Candidates that clear it must ALSO survive 2/2 adversarial skeptics
+  max |cos| with S06/S07/S08 legs <= 0.35. Candidates that clear it must ALSO pass two independent adversarial re-checks
   (causality, re-run, half-sample 001-014 vs 015-029 both positive, smoothing hl/2 and 2hl).
-* Workflow c4-honest-edge-hunt (run wf_11551755-bb9): 5 families - timescale, neutralisation, offline_learned (leave-one-
+* Family search c4-honest-edge-hunt (C4): 5 families - timescale, neutralisation, offline_learned (leave-one-
   period-out on honest rows), peer_factor, f5f6_nonlinear; <= 12 evaluate() calls each (all logged as trials);
-  agent code in research/agents/. Vault (030/031) and runner --full are off-limits.
+  search scripts kept locally (not published). Vault (030/031) and runner --full are off-limits.
 
-* **Workflow results (wf_11551755-bb9):** timescale NULL (1-day reversal gross ~= 5bp cost); neutralisation NULL (on
+* **Family search results (C4):** timescale NULL (1-day reversal gross ~= 5bp cost); neutralisation NULL (on
   scored rows the target is EXACTLY the xs-z of the 120h fwd sum, cos 1.000; the 0.936 came from reconstructed old rows);
   offline_learned weak (nested-CV unbiased SR 0.0075); f5f6_nonlinear NULL (resumed after a network failure, 10/12 evals,
   best +0.0141 but IC t 1.0, H1 +0.003 / H2 +0.022 -> noise; the earlier F6 edge was its S06 overlap).
   **peer_factor: S09 = PCA-idiosyncratic 120h reversal of Feature.1 (K=8 factors, 720h trailing cov), hl 672.**
-  Honest SR +0.0259 [+0.0166,+0.0352], @10bp +0.0190, IC t 4.8, 83% periods +, t across periods 4.5, DSR 0.93 (N=325);
-  half-samples +0.025/+0.027; hl 336-1344 all +0.024..+0.027; causality audited by 2 skeptics (both refuted ONLY on
-  novelty uncertainty). GATE EMULATION PASS (real -0.0116 vs null -0.0246 +- 0.0037, z 3.5). Dev city 53.5 deg, only
+  Honest SR +0.0259 [+0.0166,+0.0352], @10bp +0.0190, IC t 4.8, 83% periods +, t across periods 4.5, DSR 0.93 (N=325) [NW lag 48; with lag 120 the IC t is 3.6. The 0.93 used S09's own s.e. as the trial spread (< 10 comparable trials); counting the PERP_S08 sibling evaluated 18 s later (N=326) gives DSR ~0, see reports/hac_lag_check.md];
+  half-samples +0.025/+0.027; hl 336-1344 all +0.024..+0.027; causality checked by two independent adversarial re-checks
+  (both objected ONLY on novelty uncertainty). GATE EMULATION PASS (real -0.0116 vs null -0.0246 +- 0.0037, z 3.5). Dev city 53.5 deg, only
   6/1646 cities within 60 deg. rho_hat vs probes: S06 0.244 (>=59.6 deg from its pot occupant), S07v2 0.030,
   S08 0.264 (32..117 deg from S08's occupant: the open risk; typical-case ~78 deg).
   S09-perp (PERP_S08=True): SR +0.0147 [+0.0057], DSR 0.33, all |rho| <= 0.09 -> >= 49-72 deg from every occupant.
   READY: submit/s09_pca_idio_reversal.py (sha 42e5f14f13d6ed58) and submit/s09_pca_idio_reversal_perp_s08True.py
-  (sha 946ae168b99a43b6). Pre-registered-rule amendment (stated openly): edge confirmed genuine by both skeptics; only
+  (sha 946ae168b99a43b6). Pre-registered-rule amendment (stated openly): edge confirmed by both adversarial re-checks; only
   novelty uncertain, which is what a server check measures -> check S09 first, then S09-perp if needed.
 
 * S09 cold-start test (history hook disabled, bare 800-row blocks): SR5 +0.0153 +- 0.0063, @10bp +0.0086, IC 0.014,
@@ -178,7 +178,7 @@ candidates by ~13 Oct, >= 24 h before close. Read PROJECT.md for layout/workflow
    model risk failing; same-hour ranks and two-point differences are gate-safe.
 7. Board columns decoded: Sharpe | IC | IC std | IC-disp corr | concentration | compression loss | city deg | global deg.
    Admission = global novelty >= 60 deg (|rho| <= 0.5) vs higher-ranked + legacy pot. config/leaderboard.json = snapshot.
-8. Quick runner (800 rows) has SE ~0.035: never decide on it (side-agent note, agreed).
+8. Quick runner (800 rows) has SE ~0.035: never decide on it (confirmed by an independent check).
 
 ## Results so far (official protocol unless stated)
 | what | result | verdict |

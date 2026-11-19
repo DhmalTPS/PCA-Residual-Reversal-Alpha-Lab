@@ -1,7 +1,7 @@
 """Run ANY research script of ANY cycle safely - old C4 archives included - without losing earlier outputs.
 
   python common/tools/run_research.py seasons/S1/C4/research/r06_official_screen.py
-  python common/tools/run_research.py seasons/S1/C4/research/agents/_f5f6_v3_halves.py
+  python common/tools/run_research.py seasons/S1/C4/research/r16_x_alpha_screen.py
   python common/tools/run_research.py common/research_templates/r00_data_audit.py      (runs on the ACTIVE cycle)
   python common/tools/run_research.py <script.py> -- <script args...>
 

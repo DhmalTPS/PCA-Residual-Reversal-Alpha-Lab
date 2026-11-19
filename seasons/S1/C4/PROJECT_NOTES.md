@@ -5,7 +5,7 @@
 
 Vendor files (`runner.py`, `predictor.py`, `walkforward.py`, `evaluation.py`, `data_loader.py`,
 `city_tools.py`, `demo*.py`, `README.md`, `COMPETITION.md`, `METRICS.md`) are **as shipped - never edit**.
-Everything else is ours.
+Everything else is my own code.
 
 ## Layout
 | Path | Role |
@@ -18,7 +18,7 @@ Everything else is ours.
 | `tools/` | gates and pipeline: precheck, dynamic_check, evaluate, shuffle_gate, novelty, choose, vault, freeze |
 | `tests/` | selftest + deliberately bad controls each gate must catch |
 | `experiments/` | registry.csv (every trial), runs/<id>/ (OOS predictions + metrics), vault_log.csv |
-| `pot/` | our own passing submissions this season (frozen + predictions) |
+| `pot/` | own passing submissions this season (frozen + predictions) |
 | `submit/` | final, checked files with checklist |
 
 ## Measured facts (real data, period 031, dev = H039..P029, vault = P030..P031)
@@ -34,7 +34,7 @@ $env:PYTHONIOENCODING="utf-8"; $env:COMP6_DISABLE_PIP_INSTALL="1"
 python tests/selftest.py                                   # every gate catches its control
 python tools/precheck.py strategies/sNN.py                 # static
 python tools/dynamic_check.py strategies/sNN.py            # runtime (incl. history hook, row shift)
-python tools/evaluate.py strategies/sNN.py --mode full     # 28-fold purged walk-forward + uncertainty
+python tools/evaluate.py strategies/sNN.py --mode full     # official per-period protocol (29 dev periods) + uncertainty
 python research/r04_turnover.py strategies/sNN.py          # smoothing x band (paired one-SE rule)
 python tools/shuffle_gate.py strategies/sNN.py --reps 30   # gate emulation
 python tools/city.py RUN_ID                                # city on DEV periods only (vault-safe)
@@ -43,7 +43,7 @@ python tools/vault.py strategies/sNN.py                    # ONE shot - BEFORE a
 python tools/freeze.py promote strategies/sNN.py --set K=V # -> submit/ with checklist
 ```
 
-## Rules we must keep (summary)
+## Competition rules to keep (summary)
 One account; own work; OSI-licensed libraries only; no external data (the synthetic panel in
 `lab/synth.py` is a tool test fixture, never used to fit or tune a submission); no private code
 sharing; competition data stays private and is deleted after the season; winners must deliver

@@ -1,4 +1,4 @@
 file_name,sharpe,n_observations,timestamp
-F:\#Project\AlphaNova_S1C4\seasons\S1\C5\submissions\c5_idio_reversal_change_lag240_n_factors3_smooth_halflife48p0_smooth_window1.py,0.071573,800,2026-10-15T12:07:05.245808
-F:\#Project\AlphaNova_S1C4\seasons\S1\C5\submissions\c5_orthogonal_learned.py,0.018425,800,2026-10-15T13:54:28.742681
-F:\#Project\AlphaNova_S1C4\seasons\S1\C5\submissions\c5_orthogonal_learned_include_abTrue.py,0.080514,800,2026-10-15T13:54:34.731609
+seasons\S1\C5\submissions\c5_idio_reversal_change_lag240_n_factors3_smooth_halflife48p0_smooth_window1.py,0.071573,800,2026-10-15T12:07:05.245808
+seasons\S1\C5\submissions\c5_orthogonal_learned.py,0.018425,800,2026-10-15T13:54:28.742681
+seasons\S1\C5\submissions\c5_orthogonal_learned_include_abTrue.py,0.080514,800,2026-10-15T13:54:34.731609

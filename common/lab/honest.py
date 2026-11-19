@@ -1,4 +1,4 @@
-"""Shared HONEST candidate-evaluation harness (used by every research agent - one protocol for all).
+"""Shared HONEST candidate-evaluation harness (used by every family search - one protocol for all).
 
 evaluate(fn, name) scores a candidate construction exactly the way submissions are scored, plus the
 novelty and gate diagnostics that decided C4 so far:

@@ -1,5 +1,8 @@
 # R00 data audit (real, period 031)
 
+> Note: STATUS.md and PROJECT_NOTES.md record 50,815 rows for the latest file; the 49,351 below comes from this
+> earlier run and was not reconciled.
+
 ## Structure
 - rows 49351, tickers 20, features ['Feature.1', 'Feature.2', 'Feature.3', 'Feature.4', 'Feature.5', 'Feature.6']
 - index 0 .. 49350; most common steps: n/a
